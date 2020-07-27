@@ -1,8 +1,23 @@
-# PROYECTOS_DESCONTINUADO
+﻿# PROYECTOS_DESCONTINUADO
 
 **Script Descontinuados**
 
--------------------------------------------------------------------------------
+ • EN ESTE REPOSITORIO SE ENCUENTRAN LOS SCRIPTS QUE AN SIDO DESCONTINUADOS
+ • A MEDIDA TENGA TIEMPO DISPONIBLE ARMAREMOS LOS LINK PARA QUE PUEDAN SER USADOS
+
+```
+ • Recontruidos:
+
+ • 
+ • 
+ • 
+ • 
+ • 
+ • 
+ • 
+ • 
+
+```
 
 ```
 * SIN MINERIA! 
@@ -13,8 +28,8 @@
 ```
 
 ```
-? https://t.me/admmanagerfree ?
+☆ https://t.me/admmanagerfree ☆
 
 ```
 
-**By: [ ILLUMINATI CORP ???? ]**
+**By: [ ILLUMINATI CORP ⃘⃤꙰✰ ]**
