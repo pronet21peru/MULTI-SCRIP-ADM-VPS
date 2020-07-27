@@ -1,7 +1,7 @@
 #!/bin/bash
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvR0VORVJBRE9SLU5FVy1VTFRJTUFURS1PUklHSU5BTC9tYXN0ZXIvZ2VyYWRvcg=="
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvUFJPWUVDVE9TX0RFU0NPTlRJTlVBRE9TL21hc3Rlci9HRU5FUkFET1ItTkVXLVVMVElNQVRFLU9SSUdJTkFML2dlcmFkb3IvR0VSQURPUg=="
 SUB_DOM='base64 -d'
 rm $(pwd)/$0
 ofus () {
@@ -59,7 +59,7 @@ echo -e "\033[1;31m- \033[1;32mRecebido Com Sucesso!"
 [[ -e $HOME/$arqx ]] && veryfy_fun $arqx
 } || echo -e "\033[1;31m- \033[1;31mFalha (nao recebido!)"
 done
-[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/master/Install/trans &> /dev/null
+[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Install/trans &> /dev/null
 [[ -e /bin/http-server.py ]] && mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
 [[ $(dpkg --get-selections|grep -w "bc"|head -1) ]] || apt-get install bc -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "screen"|head -1) ]] || apt-get install screen -y &>/dev/null
@@ -83,5 +83,5 @@ echo -e "\033[1;33mKey Invalida!"
 echo -e "\033[1;36m--------------------------------------------------------------------\033[0m"
 }
 echo -ne "\033[0m"
-echo "qra-atsilK?65@%6087%?66d5K8888:%6+95+@@?+08" > /etc/key-gerador
+echo "qra-atsilK?29@%6087%?66d5K8888:%05+08+@@?+91" > /etc/key-gerador
 apt-get install netcat -y &>/dev/null

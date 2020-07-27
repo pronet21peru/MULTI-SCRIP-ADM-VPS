@@ -22,17 +22,17 @@ O EJECUTAR EL COMANDO SIGUIENTE:
 
 ## Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/master/instgerador.sh; chmod 777 instgerador.sh* && ./instgerador.sh
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/instgerador.sh; chmod 777 instgerador.sh* && ./instgerador.sh
 
 -------------------------------------------------------------------------------
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/blob/master/Imagenes/INSTALL_GENERADOR.png)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/INSTALL_GENERADOR.png)
 
 ```
 PARA INGRESAR AL GENERADOR ESCRIBE LOS COMANDOS EN MINUSCULA  gerar.sh o gerar
 ```
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/blob/master/Imagenes/GENERADOR_NEW_ULTIMATE.png)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/GENERADOR_NEW_ULTIMATE.png)
 
 
 ```
@@ -51,13 +51,13 @@ INSTALADOR ALTERNATIVO
 
 ## Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/master/instalar.sh; chmod 777 instalar.sh* && ./instalar.sh*
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/instalar.sh; chmod 777 instalar.sh* && ./instalar.sh*
 
 -------------------------------------------------------------------------------
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/blob/master/Imagenes/INSTALL_NEWADM.png)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/INSTALL_NEWADM.png)
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/blob/master/Imagenes/NEW_ULTIMATE.png)
+![logo](hhttps://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/NEW_ULTIMATE.png)
 
 ```
 * SIN MINERIA! 
