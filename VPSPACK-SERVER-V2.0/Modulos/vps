@@ -425,10 +425,10 @@ bash /etc/usuariosteste/$nome.sh &
 exit
 }
 function badvpn_install(){
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPSPACK-SERVER-V2.0/master/Install/badudp && bash badudp
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/VPSPACK-SERVER-V2.0/Install/badudp && bash badudp
 }
 function tcptweaker_install(){
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPSPACK-SERVER-V2.0/master/Install/tcptweaker && bash badudp
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/VPSPACK-SERVER-V2.0/Install/tcptweaker && bash tcptweaker
 }
 function removerlimite(){
 echo -ne "\033[1;32mCual usuario desear retirar el Limite de Conexion: \033[0m"
@@ -671,7 +671,7 @@ clear
 if [[ $1 == "" ]]
 then
 echo -e "\033[0;34m=========================================================\033[0m"
-echo -e "\033[0;31m\033[1;37mPUERTOS ACTIVOS E INFORMACION DEL SERVIDOR\033[0m"
+echo -e "\033[0;31m\033[1;37m        PUERTOS ACTIVOS E INFORMACION DEL SERVIDOR\033[0m"
 echo -e "\033[0;34m=========================================================\033[0m"
 mine_port () {
 unset portas
