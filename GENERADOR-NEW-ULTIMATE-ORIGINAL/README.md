@@ -57,7 +57,7 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/INSTALL_NEWADM.png)
 
-![logo](hhttps://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/NEW_ULTIMATE.png)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Imagenes/NEW_ULTIMATE.png)
 
 ```
 * SIN MINERIA! 
