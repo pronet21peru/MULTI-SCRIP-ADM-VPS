@@ -48,7 +48,6 @@ fun_ip
 echo -ne "\033[1;31mPara que la instalacion sea correcta confirme seu IP"; read -p ": " -e -i $IP ip
 clear
 echo -e "\033[0;34m=========================================================\033[0m"
-echo -e "\033[1;31m-----> \033[01;37mScript hecho Por: (VPSPACK-TEAM)\033[0m"
 echo -e "\033[1;31m-----> \033[01;37mSu Sitema Operativo es:\033[1;31m $sistema"
 echo -e "\033[1;31m-----> \033[01;37mSu IP:\033[1;31m $ip"
 echo -e "\033[1;31m-----> \033[1;37mSQUID CON LOS PUERTOS\033[1;31m 80, 8080, 8799, 3128\033[0m"
