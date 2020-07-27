@@ -671,7 +671,7 @@ clear
 if [[ $1 == "" ]]
 then
 echo -e "\033[0;34m=========================================================\033[0m"
-echo -e "\033[0;31m\033[1;37m        PUERTOS ACTIVOS E INFORMACION DEL SERVIDOR\033[0m"
+echo -e "\033[0;31m\033[1;37mPUERTOS ACTIVOS E INFORMACION DEL SERVIDOR\033[0m"
 echo -e "\033[0;34m=========================================================\033[0m"
 mine_port () {
 unset portas
