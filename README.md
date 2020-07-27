@@ -9,13 +9,15 @@
  • Recontruidos:
 
 *  VPSPACK-SERVER-V2.0
- • 
- • 
- • 
- • 
- • 
- • 
- • 
+*  VPS-MANAGER-V3.0
+*  
+*  
+*  
+*  
+*  
+*  
+*  
+*  
 
 ```
 
