@@ -2,7 +2,7 @@
 
 # ESTE PROYECTO A SIDO DESCONTINUADO.--
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/VPSPACK-SERVER-V2.0/Imagenes/VPS_MANAGER.jpg)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/VPS-MANAGER-V3.0/Imagenes/VPS_MANAGER.jpg)
 
 -------------------------------------------------------------------------------
 
