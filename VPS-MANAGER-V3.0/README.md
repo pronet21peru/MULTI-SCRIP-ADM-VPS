@@ -2,7 +2,7 @@
 
 # ESTE PROYECTO A SIDO DESCONTINUADO.--
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MANAGER-V3.0/blob/master/Imagenes/VPS_MANAGER.jpg)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/VPSPACK-SERVER-V2.0/Imagenes/VPS_MANAGER.jpg)
 
 -------------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@
 
 ## Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MANAGER-V3.0/master/vpsmanagersetup.sh; chmod +x vpsmanagersetup.sh; ./vpsmanagersetup.sh
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/VPS-MANAGER-V3.0/vpsmanagersetup.sh; chmod +x vpsmanagersetup.sh; ./vpsmanagersetup.sh
 
 -------------------------------------------------------------------------------
 
