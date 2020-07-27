@@ -11,12 +11,7 @@
 *  VPSPACK-SERVER-V2.0
 *  VPS-MANAGER-V3.0
 *  GENERADOR-NEW-ULTIMATE-ORIGINAL
-*  
-*  
-*  
-*  
-*  
-*  
+*  ADM-MANAGER-MOD
 *  
 
 ```
