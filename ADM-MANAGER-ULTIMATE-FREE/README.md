@@ -2,7 +2,7 @@
 
 # ESTE PROYECTO A SIDO DESCONTINUADO.--
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-FREE/blob/master/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/ADM-MANAGER-ULTIMATE-FREE/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
 
 -------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@
 
 ## Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-FREE/master/instala.sh; chmod +x instala.sh; ./instala.sh
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-FREE/instala.sh; chmod +x instala.sh; ./instala.sh
 
 -------------------------------------------------------------------------------
 
