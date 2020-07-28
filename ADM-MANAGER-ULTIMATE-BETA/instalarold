@@ -65,7 +65,7 @@ echo -e "Use Command:"
 echo -e "\033[1;36mdpkg --configure -a"
 echo -e "\033[1;31mVerify your Source.list"
 echo -e "For Update Source list use this comand"
-echo -e "\033[1;36mwget https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-BETA/raw/master/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
+echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
 echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -ne "\033[0m"
 exit 1
@@ -92,7 +92,7 @@ error_fun
 fi
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
-wget -O trans https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-BETA/raw/master/Install/trans -o /dev/null 2>&1
+wget -O trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
@@ -122,7 +122,7 @@ echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -ne "${cor[4]}"
 sleep 3s
-wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-BETA/master/lista -o /dev/null
+wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/lista -o /dev/null
 if [ "$(cat $HOME/lista | grep $link_list/${key[1]})" = "" ]; then
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[2]}INVÁLIDA, saliendo..."
@@ -141,7 +141,7 @@ echo "verify" > /bin/verifysys && chmod +x /bin/verifysys
 echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
 _contador="1"
 cd /etc/adm-lite
-wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-BETA/master/lista -o /dev/null
+wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/lista -o /dev/null
 wget -i lista -o /dev/null
 _contador=$(($_contador + 1))
 echo -e "${cor[3]}$(source trans -b pt:${id} "Agora Será Instalado las Dependencias")"

@@ -184,7 +184,7 @@ echo -e "${cor[4]} ${txt[118]}
 echo -e "${cor[5]} ${txt[122]}"
 echo -e "${cor[1]} ══════════════════════════════════= ${cor[0]}"
 cd $HOME
-wget https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ULTIMATE-BETA/raw/master/Install/badvpn-udpgw -o /dev/null
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/badvpn-udpgw -o /dev/null
 mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
 chmod 777 /bin/badvpn-udpgw
 screen -dmS screen /bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 10

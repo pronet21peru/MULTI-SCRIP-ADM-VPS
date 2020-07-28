@@ -47,7 +47,7 @@ read -p " [S/N]: " fail2ban
 if [[ "$fail2ban" = "s" || "$fail2ban" = "S" ]]; then
 apt-get install fail2ban -y
 cd $HOME
-wget -O fail2ban https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/ADM-MANAGER-ULTIMATE-FREE/Install/fail2ban-0.9.4.tar.gz -o /dev/null
+wget -O fail2ban https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-FREE/Install/fail2ban-0.9.4.tar.gz -o /dev/null
 tar -xf $HOME/fail2ban
 cd $HOME/fail2ban-0.9.4
 ./setup.py install
