@@ -1,5 +1,4 @@
 #!/bin/bash
-P_SERVER=$(echo -e $(echo 3130342e3233382e3133352e313437|sed 's/../\\x&/g;s/$/ /'))
 ofuscate_fun () {
 unset txtofus
 number=$(expr length $1)
@@ -96,8 +95,7 @@ cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 [[ -e $HOME/lista ]] && rm $HOME/lista
-v1=$(curl -sSL "${P_SERVER}:81/versaoatt")
-echo "$v1" > /etc/adm-lite/versao_script
+echo "24377" > /etc/adm-lite/versao_script
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
