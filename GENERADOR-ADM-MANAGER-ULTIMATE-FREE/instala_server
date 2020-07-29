@@ -12,8 +12,8 @@ apt-get install screen -y > /dev/null
 apt-get install apache2 -y > /dev/null 2>&1
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/master/adm-server.tgz > /dev/null 2>&1
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/master/bin.tgz > /dev/null 2>&1
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/Server/adm-server.tgz > /dev/null 2>&1
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/Server/bin.tgz > /dev/null 2>&1
 tar xvfz /root/adm-server.tgz > /dev/null 2>&1
 tar xvfz /root/bin.tgz > /dev/null 2>&1
 rm -rf /root/adm-server.tgz > /dev/null 2>&1
