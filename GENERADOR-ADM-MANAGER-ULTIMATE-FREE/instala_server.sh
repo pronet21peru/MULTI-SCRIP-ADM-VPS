@@ -29,6 +29,7 @@ purpleClaro="\033[1;35m"
 cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
+clear
 echo -e "\033[1;36m=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "\033[1;31m ° INSTALADOR ADM-SCRIPTS KEY-ADM-MANAGER ®\033[0m"
 echo -e "\033[1;36m=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
@@ -86,5 +87,4 @@ echo -e "\033[1;33m ° Perfecto, Utilice el comando \033[1;31mautoonline\033[0m"
 echo -e "\033[1;33m   para administrar sus claves y
    Actualizar la base de servidores\033[0m"
 echo -e "\033[1;36m=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-rm -rf $HOME/trans > /dev/null 2>&1
 rm -rf $HOME/instala_server.sh > /dev/null 2>&1
