@@ -1,0 +1,38 @@
+ADM PRO-ULTIMATE, [11.03.18 00:37]
+SCRIPT QUE CONFIGURA POR COMPLETO TU VPS
+      ????????????????????????????
+
+apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh; chmod +x ./instala.sh; ./instala.sh
+
+CONFIGURA : dropbear - proxy squid - proxy python - ssl - shadowsocks - panel de control y mucho mas
+
+ACA LES DEJARE 5 KEYS cada key es valida solo para una instalacion
+????????????????????????
+
+@8:88@#4@?#@8@#59@+7354152465
+@8:88@#4@?#@8@#59@+15090835286
+@8:88@#4@?#@8@#59@+91763946953
+@8:88@#4@?#@8@#59@+47121735391
+@8:88@#4@?#@8@#59@+77828749911
+
+para adquirir keys de instalacion o vps ya configurados escribir a @El_Novato
+
+ADM PRO-ULTIMATE, [11.03.18 00:38]
+[Reenviado desde ADM PRO-ULTIMATE]
+SCRIPT QUE CONFIGURA POR COMPLETO TU VPS
+      ????????????????????????????
+
+apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh; chmod +x ./instala.sh; ./instala.sh
+
+CONFIGURA : dropbear - proxy squid - proxy python - ssl - shadowsocks - panel de control y mucho mas
+
+ACA LES DEJARE 5 KEYS cada key es valida solo para una instalacion
+????????????????????????
+
+@8:88@#4@?#@8@#59@+7354152465
+@8:88@#4@?#@8@#59@+15090835286
+@8:88@#4@?#@8@#59@+91763946953
+@8:88@#4@?#@8@#59@+47121735391
+@8:88@#4@?#@8@#59@+77828749911
+
+para adquirir keys de instalacion o vps ya configurados escribir a @El_Novato

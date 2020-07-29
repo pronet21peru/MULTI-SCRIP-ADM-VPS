@@ -16,13 +16,19 @@
 * No traducir el script por fallas en la api de google (Install/trans)
 
 
-## Installation
+## Installation Server (Opcion 1)
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/instala_server; chmod +x ./instala_server; ./instala_server
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/instala_server; chmod +x instala_server; ./instala_server
 
-## Installation
+## Installation Server (Opcion 2)
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/instala_server.sh; chmod +x ./instala_server.sh; ./instala_server.sh
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/instala_server.sh; chmod +x instala_server.sh; ./instala_server.sh
+
+-------------------------------------------------------------------------------
+
+## Installation SCRIPTS
+
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/instala.sh; chmod +x instala.sh; ./instala.sh
 
 -------------------------------------------------------------------------------
 
