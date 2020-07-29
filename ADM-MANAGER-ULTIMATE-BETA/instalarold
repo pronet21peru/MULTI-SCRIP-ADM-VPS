@@ -69,7 +69,7 @@ echo -e "${cor[3]} Iniciando Instalação..."
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 sleep 3s
 echo -ne "${cor[4]}"
-read -p " DIGITE A KEY: " key_key
+
 key[1]=$(echo "$key_key" | awk -F "∆" '{print $2}')
 key[2]=$(echo "$key_key" | awk -F "∆" '{print $1}')
 ofuscate_fun ${key[2]}
@@ -83,8 +83,6 @@ exit
 fi
 echo -e "${cor[2]} OK, key: ${cor[3]}$key_key${cor[2]} Valida! Instalando..."
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-
-
 
 
 
