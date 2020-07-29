@@ -24,7 +24,6 @@ rm -rf /root/bin > /dev/null 2>&1
 chmod +x /bin/autoonline > /dev/null 2>&1
 chmod +x /bin/keyserver.sh > /dev/null 2>&1
 chmod 777 /bin/*
-echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[2]} Perfeito, Use o Comando \033[1;31mautoonline ${cor[2]}
  para Gerenciar as Suas Keys e
  Atualizar a Base do servidor"
