@@ -68,7 +68,6 @@ echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 sleep 3s
 key[1]=$(echo "$key_key" | awk -F "∆" '{print $2}')
 key[2]=$(echo "$key_key" | awk -F "∆" '{print $1}')
-ofuscate_fun ${key[2]}
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/lista -o /dev/null
 if [ "$(cat $HOME/lista | grep $link_list/${key[1]})" = "" ]; then
 echo -e "${cor[2]} INVALIDA, saindo..."
