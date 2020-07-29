@@ -64,22 +64,22 @@ echo -e "${cor[3]} INSTALADOR ADM-SCRIPTS ®"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]} Iniciando Instalação..."
 
-
-
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 sleep 3s
-echo -ne "${cor[4]}"
 key[1]=$(echo "$key_key" | awk -F "∆" '{print $2}')
 key[2]=$(echo "$key_key" | awk -F "∆" '{print $1}')
 ofuscate_fun ${key[2]}
 echo -e "${cor[2]} Verificando Key: ${cor[3]}$key_key"
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE-BETA/Install/lista -o /dev/null
 if [ "$(cat $HOME/lista | grep $link_list/${key[1]})" = "" ]; then
+echo -e "${cor[2]} INVALIDA, saindo..."
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\033[0m"
 sleep 2s
 exit
 fi
+echo -e "${cor[2]} OK, Instalando..."
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+
 sleep 3s
 echo ""
 echo -e "${cor[3]}UMA CURIOSIDADE!!!"
