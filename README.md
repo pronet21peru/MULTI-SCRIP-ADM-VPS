@@ -8,7 +8,7 @@
 ```
  • Recontruidos:
 
-*  
+*  HERRAMIENTAS
 *  VPSPACK-SERVER-V2.0
 *  VPS-MANAGER-V3.0
 *  ADM-MANAGER-ULTIMATE-BETA
