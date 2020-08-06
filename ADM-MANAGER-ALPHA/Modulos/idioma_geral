@@ -10,8 +10,8 @@ unset n
 [[ ${txt[0]} = "" ]] && rm $_dr && exit 1
 else
 txt[0]="ADM-MANAGER-ALPHA"
-txt[1]="USUARIOS ONLINE"
-txt[2]="USUARIOS VENCIDOS"
+txt[1]="ONLINE"
+txt[2]="VENCIDOS"
 txt[3]="SU SISTEMA"
 txt[4]="¡BIENVENIDO AL MENÚ!"
 txt[5]="GESTIONAR USUARIOS"
@@ -331,7 +331,11 @@ txt[318]="Crear un nuevo archivo OpenVPN?"
 txt[319]="Crear archivo con autenticación (usuario y contraseña)?"
 txt[320]="Archivo generado en:"
 txt[321]="Para dejarlo en línea:"
-txt[322]="EJECUCIÓN AUTOMATICÁ" 
+txt[322]="EJECUCIÓN AUTOMATICÁ"
+txt[323]="SU IP:"
+txt[324]="REINICIAR SRVICIOS (VPS)"
+txt[325]="¿Realmente desea Reiniciar los Servicios?"
+txt[326]="Preparando para reiniciando Servicios."
 echo "${txt[0]}" > $_dr
 for((_cont=1; _cont<${#txt[@]}; _cont++)); do
 echo "${txt[$_cont]}" >> $_dr

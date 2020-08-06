@@ -690,7 +690,7 @@ echo -e "${cor[2]} ∆ ${cor[3]} $credit"
 echo -e "${cor[2]} √ ${cor[3]} ${txt[0]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[3]} $_os"
-echo -e "${cor[2]} ° ${cor[3]} ${txt[331]} ${cor[2]}$__IP"
+echo -e "${cor[2]} ° ${cor[3]} ${txt[323]} ${cor[2]}$__IP"
 [[ "$VERIFICAR" = "on" ]] &&
 echo -e "${cor[2]} ° ${cor[3]} ${txt[1]} $__onlines ${cor[2]}    ° ${cor[3]} ${txt[2]} $__vencidos"
 echo -e "${cor[1]} =================================== ${cor[0]}"
