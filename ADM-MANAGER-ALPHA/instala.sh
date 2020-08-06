@@ -61,8 +61,6 @@ echo -e "${cor[1]}=================================== "
 }
 
 valid_fun () {
-echo -e "${cor[2]}$(source trans -b pt:${id} "Vaya!, Instalando...")"
-echo -e "${cor[1]}=================================== "
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
 cd /etc/adm-lite
