@@ -103,6 +103,7 @@ echo -e "${cor[5]}=================================== "
 echo -ne "\033[0m"
 exit 1
 }
+
 rm $(pwd)/$0
 cor[1]="\033[1;36m"
 cor[2]="\033[1;33m"
@@ -127,6 +128,7 @@ locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}ELIGE TU IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}=================================== "
