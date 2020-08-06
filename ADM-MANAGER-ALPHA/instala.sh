@@ -77,6 +77,7 @@ cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 [[ -e $HOME/lista ]] && rm $HOME/lista
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]}$(source trans -b pt:${id} "Procedimiento perfecto hecho con éxito!")"
 echo -e "${cor[1]}=================================== "
@@ -138,8 +139,7 @@ case $lang in
 4)id="fr";;
 *)id="es";;
 esac
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} $(source trans -b pt:${id} "Use el enlace oficial de instalación"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "No uses otros enlaces!")"
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
 echo -e "${cor[1]}=================================== "
