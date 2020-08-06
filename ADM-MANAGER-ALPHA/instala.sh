@@ -34,6 +34,11 @@ instalar_fun () {
 cd /etc/adm-lite && bash cabecalho --instalar
 }
 
+versao_script () {
+v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
+echo "$v1" > /etc/adm-lite/versao_script
+}
+
 elimined_fun () {
 text=$(source trans -b pt:${id} "Instalando")
 echo -e "${cor[2]} Update"
@@ -67,6 +72,7 @@ echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
+versao_script
 echo -e "${cor[3]}$(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
 echo -e "${cor[1]}===================================†"
 cd /etc/adm-lite
@@ -140,5 +146,5 @@ echo -e "${cor[1]}===================================†"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instala√ß√£o...")"
 echo -e "${cor[1]}===================================†"
 echo -ne "${cor[4]}"
-wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ULTIMATE/Install/lista -o /dev/null
+wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
 valid_fun
