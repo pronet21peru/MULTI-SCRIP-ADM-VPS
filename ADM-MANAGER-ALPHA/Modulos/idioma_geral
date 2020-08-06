@@ -331,7 +331,7 @@ txt[318]="Criar Um Novo Arquivo OpenVPN?"
 txt[319]="Criar Arquivo Com Autenticacao (usuario e senha)?" 
 txt[320]="Arquivo Gerado em:" 
 txt[321]="Para deixar ele online:" 
-txt[322]="EJECUCIÓN AUTOMATIC� " 
+txt[322]="EJECUCIÓN AUTOMATiCÁ" 
 echo "${txt[0]}" > $_dr
 for((_cont=1; _cont<${#txt[@]}; _cont++)); do
 echo "${txt[$_cont]}" >> $_dr
