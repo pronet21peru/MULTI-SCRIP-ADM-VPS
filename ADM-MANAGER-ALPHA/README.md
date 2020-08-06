@@ -1,6 +1,6 @@
 ﻿# ADM-MANAGER-ALPHA
 
-![logo]( )
+![logo](https://i.ytimg.com/vi/JnezGZGVVyU/maxresdefault.jpg)
 
 -------------------------------------------------------------------------------
 
