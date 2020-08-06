@@ -10,7 +10,6 @@ _arquivo4="/etc/adm-lite/tmp_arq4"
 [[ -e "$_arquivo2" ]] && rm $_arquivo2
 [[ -e "$_arquivo3" ]] && rm $_arquivo3
 [[ -e "$_arquivo4" ]] && rm $_arquivo4
-[[ ! -e $(echo -e $(echo "2f62696e2f766572696679737973"| sed 's/../\\x&/g;s/$/ /')) ]] && sudo $(echo -e $(echo "726D202D7266202f6574632f61646d2d6c697465"| sed 's/../\\x&/g;s/$/ /'))
 
 function_dropb () {  
 port_dropbear=`ps aux | grep dropbear | awk NR==1 | awk '{print $17;}'`
