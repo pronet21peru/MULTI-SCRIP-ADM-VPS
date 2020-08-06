@@ -61,7 +61,7 @@ echo -e "${cor[1]}=================================== "
 }
 
 valid_fun () {
-echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Instalando...")"
+echo -e "${cor[2]}$(source trans -b pt:${id} "Vaya!, Instalando...")"
 echo -e "${cor[1]}=================================== "
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
@@ -73,19 +73,19 @@ cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
 versao_script
-echo -e "${cor[3]}$(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
+echo -e "${cor[3]}$(source trans -b pt:${id} "Ahora se instalarán las dependencias")"
 echo -e "${cor[1]}=================================== "
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} |âˆ†| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
+echo -e "${cor[3]}$(source trans -b pt:${id} "Procedimiento perfecto hecho con éxito!")"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}$(source trans -b pt:${id} "Use os Comandos"): menu, adm"
-echo -e "${cor[2]}$(source trans -b pt:${id} "e acesse o script, um bom uso!")"
+echo -e "${cor[3]} |âˆ†| ${cor[2]}$(source trans -b pt:${id} " Ahora solo configura su VPS con el menú de instalación")"
+echo -e "${cor[1]}=================================== "
+echo -e "${cor[2]}$(source trans -b pt:${id} "Usa los comandos"): menu, adm"
+echo -e "${cor[2]}$(source trans -b pt:${id} "y accede al script, buen uso!")"
 echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
@@ -139,11 +139,11 @@ case $lang in
 *)id="es";;
 esac
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Use el enlace oficial de instalación"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "No uses otros enlaces!")"
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando InstalaÃ§Ã£o...")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando la instalación...")"
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
