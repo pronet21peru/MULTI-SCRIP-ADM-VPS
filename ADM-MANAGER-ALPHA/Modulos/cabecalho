@@ -406,13 +406,6 @@ touch $HOME/fim
 exit 0
 }
 
-meu_ip
-P_SERVER="104.238.135.147"
-TOTAL_LIB=$(curl -sSL "${P_SERVER}:81/liberados")
-[[ "$(echo $TOTAL_LIB|grep ${IP})" ]] && {
-touch $(add_values 2f 75 73 72 2f 62 69 6e 2f 61 64 6d 2d 75 6c 74 69 6d 61 74 65)
-}
-
 #PREENXE_VARIAVEL $select_name
 select_users () {
 _cont="1"
@@ -633,7 +626,6 @@ fi
 }
 
 #VERIFICA AS PORTAS
-[[ ! -e $(add_values 2f 75 73 72 2f 62 69 6e 2f 61 64 6d 2d 75 6c 74 69 6d 61 74 65) ]] && exit 0
 minhas_portas () {
 echo -e "${cor[1]} =================================== ${cor[4]}"
 portas_var="/tmp/portas"
@@ -699,6 +691,5 @@ echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[1]} $__onlines"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[2]} $__vencidos"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[3]} $_os"
-[[ ! -e $(echo -e $(echo "2f62696e2f766572696679737973"| sed 's/../\\x&/g;s/$/ /')) ]] && sudo $(echo -e $(echo "726D202D7266202f6574632f61646d2d6c697465"| sed 's/../\\x&/g;s/$/ /'))
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
