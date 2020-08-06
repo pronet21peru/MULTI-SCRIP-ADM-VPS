@@ -9,7 +9,7 @@ done < $_dr
 unset n
 [[ ${txt[0]} = "" ]] && rm $_dr && exit 1
 else
-txt[0]="ADM-MANAGER-ULTIMATE"
+txt[0]="ADM-MANAGER-ALPHA"
 txt[1]="USUARIOS ONLINE"
 txt[2]="USUARIOS VENCIDOS"
 txt[3]="SEU SISTEMA"
@@ -324,14 +324,14 @@ txt[311]="Baixe na PlayStore:"
 txt[312]="VNC nao Esta ativo Deseja Ativar?"
 txt[313]="VNC Esta ativo Deseja Desativar?"
 txt[314]="VNC SERVER"
-txt[315]="PARABENS SUA VERSAO ESTA ATUALIZADA!"
-txt[316]="ADM-ULTIMATE POSSUI ATUALIZACOES!"
+txt[315]="SU VERSIÓN ESTA ACTUALIZADA!"
+txt[316]="ADM-ULTIMATE NECESITA ACTUALIZARSE!"
 txt[317]="APLICAR BLOQUEIO TORRENT (NOVO)" 
 txt[318]="Criar Um Novo Arquivo OpenVPN?" 
 txt[319]="Criar Arquivo Com Autenticacao (usuario e senha)?" 
 txt[320]="Arquivo Gerado em:" 
 txt[321]="Para deixar ele online:" 
-txt[322]="Ativar/Desativar AutoRun" 
+txt[322]="EJECUCIÓN AUTOMATIC� " 
 echo "${txt[0]}" > $_dr
 for((_cont=1; _cont<${#txt[@]}; _cont++)); do
 echo "${txt[$_cont]}" >> $_dr
