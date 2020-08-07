@@ -86,7 +86,7 @@ echo -ne " \033[0m"
 function_verify () {
   echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
 }
-
+verify_fun () {
 sleep 5s
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
 [[ "$(cat $HOME/lista|grep $link_list/${key[1]})" != "" ]] && return 0
