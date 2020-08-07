@@ -1,8 +1,8 @@
 #!/bin/bash
 
 function_verify () {
-  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
-  echo "verify" > $(echo -e $(echo 2f7573722f62696e2f61646d2d756c74696d617465|sed 's/../\\x&/g;s/$/ /'))
+echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
+echo " " > $(echo -e $(echo 2f7573722f62696e2f61646d2d756c74696d617465|sed 's/../\\x&/g;s/$/ /'))
 }
 
 fun_bar () {
