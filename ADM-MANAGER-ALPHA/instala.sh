@@ -53,6 +53,7 @@ sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
 echo -e "${cor[1]}=================================== "
 }
+
 valid_fun () {
 echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Chave Valida! Instalando...")"
 echo -e "${cor[1]}=================================== "
@@ -61,6 +62,8 @@ mkdir /etc/adm-lite
 cd /etc/adm-lite
 echo "cd /etc/adm-lite && bash ./menu" > /bin/menu && chmod +x /bin/menu
 echo "cd /etc/adm-lite && bash ./menu" > /bin/adm && chmod +x /bin/adm
+echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
+touch /etc/adm-lite/index.html
 _contador="1"
 while read arq_adm; do
 cd /etc/adm-lite
