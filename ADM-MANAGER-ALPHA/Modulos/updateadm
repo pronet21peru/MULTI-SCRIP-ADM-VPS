@@ -63,7 +63,6 @@ verificarkey_fun () {
                exit 1
                }
       }
-}
 
 #CORES
 cor[1]="\033[1;36m"
