@@ -83,9 +83,4 @@ cd $HOME
 [[ -d $HOME/update ]] && rm -rf $HOME/update
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[1]} =================================== ${cor[2]}"
-echo -ne " KEY: \033[1;37m"; read serial
-[[ $serial != "" ]] && verificarkey_fun || {
-echo -e "${cor[2]} ${txt[208]}"
-echo -e "${cor[1]} ================================== ${cor[0]}"
-sleep 2s
-}
+verificarkey_fun
