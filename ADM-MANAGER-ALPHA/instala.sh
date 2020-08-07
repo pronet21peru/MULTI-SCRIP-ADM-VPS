@@ -47,12 +47,12 @@ echo -e "${cor[2]} $text Figlet"
 fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 }
 
 valid_fun () {
 echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Chave Valida! Instalando...")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
 cd /etc/adm-lite
@@ -65,21 +65,21 @@ wget $arq_adm -o /dev/null
 _contador=$(($_contador + 1))
 done < $HOME/lista
 echo -e "${cor[3]}$(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 [[ -e $HOME/lista ]] && rm $HOME/lista
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]} |?| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}$(source trans -b pt:${id} "Use os Comandos"): menu, adm"
 echo -e "${cor[2]}$(source trans -b pt:${id} "e acesse o script, um bom uso!")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
 
@@ -101,7 +101,7 @@ wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS
 }
 
 error_fun () {
-echo -e "${cor[5]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[5]}=================================== "
 echo -e "\033[1;31mYour apt-get Error!"
 echo -e "Reboot the System!"
 echo -e "Use Command:"
@@ -109,13 +109,13 @@ echo -e "\033[1;36mdpkg --configure -a"
 echo -e "\033[1;31mVerify your Source.list"
 echo -e "For Update Source list use this comand"
 echo -e "\033[1;36mwget https://www.dropbox.com/s/sb82ddp9fjcg1ub/apt-source.sh && chmod 777 ./* && ./apt-*"
-echo -e "${cor[5]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[5]}=================================== "
 echo -ne "\033[0m"
 exit 1
 }
 
 rm $(pwd)/$0
-cor[1]="\033[1;36m"
+cor[1]="\033[0;34m"
 cor[2]="\033[1;33m"
 cor[3]="\033[1;31m"
 cor[5]="\033[1;32m"
@@ -138,9 +138,9 @@ locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -ne " OPC: "; read lang
 case $lang in
 1)id="pt";;
@@ -149,13 +149,13 @@ case $lang in
 4)id="fr";;
 *)id="pt";;
 esac
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
-echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?"
+echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
 verify_fun
