@@ -25,6 +25,10 @@ done
 echo -e "\033[1;33m]\033[1;31m -\033[1;32m 100%\033[1;37m"
 }
 
+function_verify () {
+  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
+}
+
 instalar_fun () {
 cd /etc/adm-lite && bash cabecalho --instalar
 }
@@ -49,7 +53,6 @@ sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
 echo -e "${cor[1]}=================================== "
 }
-
 valid_fun () {
 echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Chave Valida! Instalando...")"
 echo -e "${cor[1]}=================================== "
@@ -75,7 +78,7 @@ echo "$v1" > /etc/adm-lite/versao_script
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} |?| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
+echo -e "${cor[3]} |âˆ†| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}$(source trans -b pt:${id} "Use os Comandos"): menu, adm"
 echo -e "${cor[2]}$(source trans -b pt:${id} "e acesse o script, um bom uso!")"
@@ -83,21 +86,8 @@ echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
 
-function_verify () {
-  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
-}
 verify_fun () {
-sleep 5s
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
-[[ "$(cat $HOME/lista|grep $link_list/${key[1]})" != "" ]] && return 0
-[[ -e $HOME/lista ]] && rm $HOME/lista
- echo -e "${cor[2]}$(source trans -b pt:${id} "INVALIDA...")"
- echo -e "${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?\033[0m"
- echo -ne "${cor[2]}$(source trans -b pt:${id} "Tentar Outra Key?") [S/N]: "; read other
- [[ $other = @(S|s|Y|y) ]] && return 1 || {
- echo -e "\033[0m"
- exit 1
- }
 }
 
 error_fun () {
@@ -139,7 +129,7 @@ update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?=?\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}=================================== "
 echo -ne " OPC: "; read lang
 case $lang in
@@ -152,9 +142,9 @@ esac
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") �"
+echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instala��o...")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando InstalaÃ§Ã£o...")"
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
