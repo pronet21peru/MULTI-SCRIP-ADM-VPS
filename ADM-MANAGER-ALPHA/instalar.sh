@@ -78,6 +78,7 @@ instalar_fun
 [[ -e $HOME/lista ]] && rm $HOME/lista
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
 echo -e "${cor[1]}=================================== "
@@ -131,6 +132,7 @@ locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}=================================== "
@@ -142,8 +144,7 @@ case $lang in
 4)id="fr";;
 *)id="pt";;
 esac
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
 echo -e "${cor[1]}=================================== "
