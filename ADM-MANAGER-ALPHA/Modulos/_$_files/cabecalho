@@ -138,9 +138,10 @@ unset fail2_ban && fail2_ban=$(dpkg -l | grep fail2ban | grep ii)
 [[ "$pid_badvpn" != "" ]] && _badvpn="$_on" || _badvpn="$_off"
 [[ `grep -c "^#ADM" /etc/sysctl.conf` -eq 0 ]] && _tcpspeed="$_off" || _tcpspeed="$_on"
 [[ "$fail2_ban" = "" ]] && fail_b="$_off" || fail_b="$_on"
+[[ -e /etc/bash.bashrc-bakup ]] && _autorun="$_on" || _autorun="$_off"
 [[ "$VERIFICAR" = "on" ]] && VERIFICAR_PID="$_on" || VERIFICAR_PID="$_off"
-[[ -e ./onlines ]] && __onlines="\033[1;31m$(cat ./onlines)" || __onlines="\033[1;31m0"
-[[ -e ./vencidos ]] && __vencidos="\033[1;31m$(cat ./vencidos)" || __vencidos="\033[1;31m0"
+[[ -e ./onlines ]] && __onlines="\033[1;31m$(cat ./onlines)" || __onlines="$_off"
+[[ -e ./vencidos ]] && __vencidos="\033[1;31m$(cat ./vencidos)" || __vencidos="$_off"
 [[ "$(ps x | grep "ultimatebot" | grep -v "grep")" != "" ]] && bot="$_on" || bot="$_off"
 [[ ! -e /etc/adm-lite/versao_script ]] && echo 1 > /etc/adm-lite/versao_script
 P_SERVER="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA"
@@ -684,14 +685,12 @@ fi
 
 [[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m${txt[315]}" || vesaoSCT="\033[1;31m${txt[316]}"
 credit=$(cat ./menu_credito)
-__IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} ∆ ${cor[3]} $credit"
 echo -e "${cor[2]} √ ${cor[3]} ${txt[0]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[2]} ° ${cor[3]} ${txt[1]} $__onlines"
+echo -e "${cor[2]} ° ${cor[3]} ${txt[2]} $__vencidos"
 echo -e "${cor[2]} ° ${cor[3]} ${txt[3]} $_os"
-echo -e "${cor[2]} ° ${cor[3]} ${txt[323]} ${cor[2]}$__IP"
-[[ "$VERIFICAR" = "on" ]] &&
-echo -e "${cor[2]} ° ${cor[3]} ${txt[1]} $__onlines ${cor[2]}    ° ${cor[3]} ${txt[2]} $__vencidos"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
