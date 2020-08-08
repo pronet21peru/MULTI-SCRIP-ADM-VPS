@@ -116,32 +116,13 @@ cor[3]="\033[1;31m"
 cor[5]="\033[1;32m"
 cor[4]="\033[0m"
 cd $HOME
-#INSTALACOES#
-if ! apt-get install at -y > /dev/null 2>&1
-then
-error_fun
-fi
-if ! apt-get install netpipes -y > /dev/null 2>&1
-then
-error_fun
-fi
-if ! apt-get install gawk -y > /dev/null 2>&1
-then
-error_fun
-fi
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}ADM-SCRIPTS Â®" "
-echo -e "${cor[1]}=================================== "
-echo -ne "INSTALAR [N/S]: \033[1;37m"; read x
-[[ $x = @(n|N) ]] && exit
-clear
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
+echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS") Â®"
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
