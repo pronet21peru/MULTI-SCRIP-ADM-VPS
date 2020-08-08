@@ -55,7 +55,7 @@ echo -e "${cor[1]}=================================== "
 }
 
 valid_fun () {
-echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Chave Valida! Instalando...")"
+echo -e "${cor[2]}$(source trans -b pt:${id} "Iniciando Instalação...")"
 echo -e "${cor[1]}=================================== "
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
@@ -144,12 +144,9 @@ case $lang in
 4)id="fr";;
 *)id="pt";;
 esac
-echo -e "${cor[1]}=================================== "
 clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
