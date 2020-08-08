@@ -137,7 +137,7 @@ clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}ADM-SCRIPTS Â®" "
 echo -e "${cor[1]}=================================== "
-echo -ne "${cor[1]}INSTALAR [N/S]: \033[1;37m"; read x
+echo -ne "INSTALAR [N/S]: \033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
 clear
 echo -e "${cor[1]}=================================== "
