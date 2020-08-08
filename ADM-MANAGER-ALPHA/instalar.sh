@@ -34,7 +34,7 @@ cd /etc/adm-lite && bash cabecalho --instalar
 }
 
 elimined_fun () {
-text=Instalando")
+text=Instalando
 echo -e "${cor[2]} Update"
 fun_bar 'apt-get install screen' 'apt-get install python'
 echo -e "${cor[2]} Upgrade"
@@ -85,7 +85,7 @@ echo -e "${cor[3]}Perfeito Procedimento Feito com Sucesso!"
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]} |âˆ†| ${cor[2]}Agora E So Voce Configurar Sua VPS com o Menu Instalacao"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}Use os Comandos"): menu, adm"
+echo -e "${cor[2]}Use os Comandos: menu, adm"
 echo -e "${cor[2]}e acesse o script, um bom uso!"
 echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
@@ -121,7 +121,7 @@ update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS") Â®"
+echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
