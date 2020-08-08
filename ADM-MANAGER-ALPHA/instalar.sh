@@ -64,6 +64,7 @@ echo "cd /etc/adm-lite && bash ./menu" > /bin/menu && chmod +x /bin/menu
 echo "cd /etc/adm-lite && bash ./menu" > /bin/adm && chmod +x /bin/adm
 echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
 touch /etc/adm-lite/index.html
+touch /usr/bin/adm-ultimate
 _contador="1"
 while read arq_adm; do
 cd /etc/adm-lite

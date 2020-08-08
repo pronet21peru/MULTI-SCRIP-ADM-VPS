@@ -39,8 +39,8 @@ done
   for _pids_ in `atq | awk '{print $1}'`; do
    atrm $_pids_
   done
-  P_SERVER="104.238.135.147"
-  v1=$(curl -sSL "${P_SERVER}:81/versaoatt")
+  P_SERVER="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA"
+  v1=$(curl -sSL "${P_SERVER}/versaoatt")
   echo "$v1" > /etc/adm-lite/versao_script
   [[ -e /etc/adm-lite/vencidos ]] && rm /etc/adm-lite/vencidos
   [[ -e /etc/adm-lite/onlines ]] && rm /etc/adm-lite/onlines
@@ -52,60 +52,16 @@ done
 echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
-#OFUSCATE 
-ofuscate_fun () {
-number=$(expr length $1)
-for((i=1; i<$number+1; i++)); do
-txt[$i]=$(echo "$1" | cut -b $i)
-if [ "${txt[$i]}" = "." ]; then
-txt[$i]="#"
-elif [ "${txt[$i]}" = "#" ]; then
-txt[$i]="."
-fi
-if [ "${txt[$i]}" = "1" ]; then
-txt[$i]="@"
-elif [ "${txt[$i]}" = "@" ]; then
-txt[$i]="1"
-fi
-if [ "${txt[$i]}" = "2" ]; then
-txt[$i]="?"
-elif [ "${txt[$i]}" = "?" ]; then
-txt[$i]="2"
-fi
-if [ "${txt[$i]}" = "3" ]; then
-txt[$i]="&"
-elif [ "${txt[$i]}" = "&" ]; then
-txt[$i]="3"
-fi
-txtofus+="${txt[$i]}"
-done
-link_list=$(echo $txtofus|rev)
-txt_ofuscatw=$(echo $txtofus|rev)
-}
-
 #VERIFICACAO
 verificarkey_fun () {
-serialx=$(echo $serial|cut -d'+' -f1)
-serialy=$(echo $serial|cut -d'+' -f2)
-ofuscate_fun $serialx
-server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
-request='encapsulate --fd 3 -si4o5 sh -c "cat<&4;echo ${txt}>&5"'
-echo -e "txt=$serialy\n$request" > $HOME/tmp && chmod +x $HOME/tmp
-respserver=$(hose ${server} 2000 --fd 3 sh -c "$HOME/tmp" 2> /dev/null)
-rm $HOME/tmp
-      [[ $respserver != "" ]] && {
-      echo -e "${cor[2]} Key: ${cor[3]}$serial"
-      sleep 5s
-      wget -O lista http://${txt_ofuscatw}/${respserver}/lista -o /dev/null
+      wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
                [[ "$(cat $HOME/lista | grep $link_list/${key[1]})" != "" ]] && atualiza_fun || {
                [[ -e $HOME/lista ]] && rm $HOME/lista
-               echo -e "${cor[2]} ${txt[208]}"
                echo -e "${cor[1]} ================================== ${cor[0]}"
                sleep 2s
                exit 1
                }
       }
-}
 
 #CORES
 cor[1]="\033[1;36m"
@@ -126,9 +82,4 @@ cd $HOME
 [[ -d $HOME/update ]] && rm -rf $HOME/update
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[1]} =================================== ${cor[2]}"
-echo -ne " KEY: \033[1;37m"; read serial
-[[ $serial != "" ]] && verificarkey_fun || {
-echo -e "${cor[2]} ${txt[208]}"
-echo -e "${cor[1]} ================================== ${cor[0]}"
-sleep 2s
-}
+verificarkey_fun
