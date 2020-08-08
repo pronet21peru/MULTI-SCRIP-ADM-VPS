@@ -120,7 +120,6 @@ locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
-clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS") Â®"
 echo -e "${cor[1]}=================================== "
