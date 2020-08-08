@@ -48,7 +48,6 @@ done
   [[ -d $HOME/update ]] && rm -rf $HOME/update
   [[ "$lista_atualizados" != "" ]] && echo -e "${cor[5]} $lista_atualizados ${txt[206]}"
   [[ -e /etc/adm-lite/idioma ]] && rm /etc/adm-lite/idioma
-  [[ ! -e $(echo -e $(echo "2f62696e2f766572696679737973"| sed 's/../\\x&/g;s/$/ /')) ]] && echo "okkz" > $(echo -e $(echo "2f62696e2f766572696679737973"| sed 's/../\\x&/g;s/$/ /'))
 echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
