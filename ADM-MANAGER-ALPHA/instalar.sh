@@ -34,7 +34,7 @@ cd /etc/adm-lite && bash cabecalho --instalar
 }
 
 elimined_fun () {
-text=$(source trans -b pt:${id} "Instalando")
+text=Instalando")
 echo -e "${cor[2]} Update"
 fun_bar 'apt-get install screen' 'apt-get install python'
 echo -e "${cor[2]} Upgrade"
@@ -55,7 +55,7 @@ echo -e "${cor[1]}=================================== "
 }
 
 valid_fun () {
-echo -e "${cor[2]}$(source trans -b pt:${id} "Iniciando Instalação...")"
+echo -e "${cor[2]}Iniciando Instalação..."
 echo -e "${cor[1]}=================================== "
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
@@ -71,7 +71,7 @@ cd /etc/adm-lite
 wget $arq_adm -o /dev/null
 _contador=$(($_contador + 1))
 done < $HOME/lista
-echo -e "${cor[3]}$(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
+echo -e "${cor[3]}Agora Sera Instalado As Dependencias"
 echo -e "${cor[1]}=================================== "
 cd /etc/adm-lite
 chmod +x ./*
@@ -81,12 +81,12 @@ v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECT
 echo "$v1" > /etc/adm-lite/versao_script
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
+echo -e "${cor[3]}Perfeito Procedimento Feito com Sucesso!"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} |âˆ†| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
+echo -e "${cor[3]} |âˆ†| ${cor[2]}Agora E So Voce Configurar Sua VPS com o Menu Instalacao"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}$(source trans -b pt:${id} "Use os Comandos"): menu, adm"
-echo -e "${cor[2]}$(source trans -b pt:${id} "e acesse o script, um bom uso!")"
+echo -e "${cor[2]}Use os Comandos"): menu, adm"
+echo -e "${cor[2]}e acesse o script, um bom uso!"
 echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
@@ -135,19 +135,13 @@ wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 
 mv -f ./trans /bin/ && chmod 777 /bin/*
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[2]}ADM-SCRIPTS Â®" "
 echo -e "${cor[1]}=================================== "
-echo -ne " OPC: "; read lang
-case $lang in
-1)id="pt";;
-2)id="en";;
-3)id="es";;
-4)id="fr";;
-*)id="pt";;
-esac
+echo -ne "${cor[1]}INSTALAR [N/S]: \033[1;37m"; read x
+[[ $x = @(n|N) ]] && exit
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
+echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
