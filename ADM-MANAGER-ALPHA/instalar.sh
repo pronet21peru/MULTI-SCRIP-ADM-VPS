@@ -144,6 +144,8 @@ case $lang in
 4)id="fr";;
 *)id="pt";;
 esac
+echo -e "${cor[1]}=================================== "
+echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
 clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
