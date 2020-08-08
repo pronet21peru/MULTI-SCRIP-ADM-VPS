@@ -63,7 +63,6 @@ source menu
 exit
 ;;
 9)
-9)
 $value > /dev/null 2>&1
 chmod +x /etc/adm-lite/*
 [[ -e /etc/adm-lite/idioma_menuinst ]] && idioma=$(cat /etc/adm-lite/idioma_menuinst|head -1) || idioma="pt"
