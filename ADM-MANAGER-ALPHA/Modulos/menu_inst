@@ -37,22 +37,6 @@ MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MEU_IP" != "$MEU_IP2" ]] && IP="$MEU_IP2" || IP="$MEU_IP"
 }
 
-#Fun
-fun_ip
-P_SERVER=" "
-v1=$(curl -sSL "${P_SERVER}:81/liberados")
-rm /etc/adm-lite/menu_inst
-[[ ! "$(echo $v1|grep ${IP})" ]] && {
-echo -e "${barra}"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Que Vergonha! Sua versao e Pirata!")"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Use o ADM-original")"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Ajude quem Realmente desenvolve e se Dedica ao Projeto!")"
-echo -e "${barra}"
-exit 0
-}
-
-
-
 #ETHOOL SSH
 fun_eth () {
 eth=$(ifconfig | grep -v inet6 | grep -v lo | grep -v 127.0.0.1 | grep "encap:Ethernet" | awk '{print $1}')

@@ -407,12 +407,7 @@ touch $HOME/fim
 exit 0
 }
 
-meu_ip
-P_SERVER=" "
-TOTAL_LIB=$(curl -sSL "${P_SERVER}:81/liberados")
-[[ "$(echo $TOTAL_LIB|grep ${IP})" ]] && {
 touch $(add_values 2f 75 73 72 2f 62 69 6e 2f 61 64 6d 2d 75 6c 74 69 6d 61 74 65)
-}
 
 #PREENXE_VARIAVEL $select_name
 select_users () {
