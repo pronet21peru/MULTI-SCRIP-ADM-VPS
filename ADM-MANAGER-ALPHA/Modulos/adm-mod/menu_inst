@@ -1,11 +1,11 @@
 #!/bin/bash
-[[ $1 != "" ]] && id="$1" || id="es"
+[[ $1 != "" ]] && id="$1" || id="pt"
 cor[0]="\033[1;37m"
 cor[1]="\033[1;34m"
 cor[2]="\033[1;31m"
 cor[3]="\033[1;33m"
 cor[4]="\033[1;32m'"
-barra="\033[0;34m ===================================\033[1;37m"
+barra="\033[1;34m ===================================\033[1;37m"
 
 #LISTA PORTAS
 mportas () {
@@ -19,14 +19,23 @@ i=1
 echo -e "$portas"
 }
 
+#LEX-FUN
+add_values () {
+unset value
+for hex in $(echo "$@"); do
+value+="$hex"
+done
+echo -e $(echo "$value"| sed 's/../\\x&/g;s/$/ /') && return 0 || return 1
+}
+[[ ! -e $(add_values 2f 75 73 72 2f 62 69 6e 2f 61 64 6d 2d 75 6c 74 69 6d 61 74 65) ]] && exit 0
+
+
 #MEU IP
 fun_ip () {
 MEU_IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MEU_IP" != "$MEU_IP2" ]] && IP="$MEU_IP2" || IP="$MEU_IP"
 }
-
-
 
 #ETHOOL SSH
 fun_eth () {
@@ -411,7 +420,7 @@ echo -e " $(source trans -b pt:${id} "Responda as perguntas para iniciar a insta
 echo -e " $(source trans -b pt:${id} "Responda corretamente")"
 echo -e "\033[1;33m$(source trans -b pt:${id} "Primeiro precisamos do ip de sua maquina, este ip esta correto?")\033[0m"
 fun_ip
-echo -ne " $(source trans -b pt:${id} "IP address")"; read -p ": " -e -i $IP ip
+echo -ne " IP address"; read -p ": " -e -i $IP ip
 echo -e "$barra\n\033[1;33m$(source trans -b pt:${id} "Qual porta voce deseja usar?")\033[0m\n$barra"
 read -p "Port: " -e -i 1194 PORT
 echo -e "\033[1;31m$(source trans -b pt:${id} "Qual protocolo voce deseja para as conexoes OPENVPN?")"
