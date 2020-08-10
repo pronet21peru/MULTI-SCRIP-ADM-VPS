@@ -788,9 +788,9 @@ barra="${cor[1]} =================================== ${cor[0]}"
 [[ -e /etc/adm-lite/idioma_menuinst ]] && id="$(cat /etc/adm-lite/idioma_menuinst)" || id=pt
 [[ $(iptables -h|wc -l) -lt 5 ]] && apt-get install iptables -y > /dev/null 2>-1
 NIC=$(ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)' | head -1)
-echo -e "$barra\n $(source trans -b pt:${id} "Essas configuracoes so Devem ser adicionadas")"
-echo -e " $(source trans -b pt:${id} "apos a vps estar totalmente configurada!")\n$barra"
-echo -e " $(source trans -b pt:${id} "Deseja Prosseguir?")"
+echo -e "$barra\n \033[1;37m Estas configuraciones solo deben agregarse"
+echo -e " \033[1;37m después de que el vps esté completamente configurado!\n$barra"
+echo -e " \033[1;37m Quieres continuar?"
 read -p " [S/N]: " -e -i n PROS
 [[ $PROS = @(s|S|y|Y) ]] || return 1
 fun_ip #Pega IP e armazena em uma variavel
@@ -841,7 +841,7 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP' >> ./torrent-adm
 ./torrent-adm
-echo -e "$barra\n $(source trans -b pt:${id} "Aplicado!")\n$barra"
+echo -e "$barra\n \033[1;36m Aplicado!\n$barra"
 }
 
 paybrute () {
