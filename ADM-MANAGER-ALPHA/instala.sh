@@ -55,7 +55,7 @@ echo -e "${cor[1]}=================================== "
 }
 
 valid_fun () {
-echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Chave Valida! Instalando...")"
+echo -e "${cor[2]}Ups !, Clave válida! Instalando ..."
 echo -e "${cor[1]}=================================== "
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
@@ -70,7 +70,7 @@ cd /etc/adm-lite
 wget $arq_adm -o /dev/null
 _contador=$(($_contador + 1))
 done < $HOME/lista
-echo -e "${cor[3]}$(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
+echo -e "${cor[3]}Ahora se instalarán las dependencias"
 echo -e "${cor[1]}=================================== "
 cd /etc/adm-lite
 chmod +x ./*
@@ -79,12 +79,12 @@ instalar_fun
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
+echo -e "${cor[3]}Procedimiento perfecto realizado con Éxito!"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} |âˆ†| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
+echo -e "${cor[3]} |âˆ†| ${cor[2]}Ahora solo configura su VPS con el men� de instalación"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}$(source trans -b pt:${id} "Use os Comandos"): menu, adm"
-echo -e "${cor[2]}$(source trans -b pt:${id} "e acesse o script, um bom uso!")"
+echo -e "${cor[2]}Utilice los comandos: menú, adm"
+echo -e "${cor[2]}y accede al script, buen uso!"
 echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
@@ -143,11 +143,11 @@ case $lang in
 *)id="pt";;
 esac
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
+echo -e "${cor[2]} Utilice el enlace de instalación oficial:\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n No utilice otros enlaces!"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") Â®"
+echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
+echo -e "${cor[3]} Inicio de la instalación..."
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 while true; do
