@@ -132,7 +132,7 @@ update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}OFICIAL ADM-SERVER\n${cor[1]}=================================== \n[1]-ES"
+echo -e "${cor[2]}OFICIAL ADM-SERVER\n${cor[1]}=================================== \n[1]-ES"
 echo -e "${cor[1]}=================================== "
 echo -ne " OPC: "; read lang
 case $lang in
