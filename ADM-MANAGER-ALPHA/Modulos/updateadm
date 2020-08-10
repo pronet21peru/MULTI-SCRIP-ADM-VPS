@@ -22,7 +22,7 @@ echo -e "\033[1;31m ${txt[203]}: $1"
 
 #ATUALIZACAO
 atualiza_fun () {
-echo -e "${cor[2]} ADM-SCRIPTS ${txt[205]}"
+echo -e "${cor[2]} ADM-SCRIPTS Â® ${txt[205]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 cd $HOME
 [[ ! -d ./update ]] && mkdir ./update
