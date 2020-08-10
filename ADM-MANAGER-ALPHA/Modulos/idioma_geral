@@ -9,7 +9,7 @@ done < $_dr
 unset n
 [[ ${txt[0]} = "" ]] && rm $_dr && exit 1
 else
-txt[0]="ADM-MANAGER-ALPHA"
+txt[0]="ADM-MANAGER-ULTIMATE"
 txt[1]="USUARIOS ONLINE"
 txt[2]="USUARIOS VENCIDOS"
 txt[3]="SU SISTEMA"
@@ -17,7 +17,7 @@ txt[4]="¡BIENVENIDO AL MENÚ!"
 txt[5]="GESTIONAR USUARIOS"
 txt[6]="HERRAMIENTAS"
 txt[7]="ACTUALIZAR"
-txt[8]="REMOVER ADM-ALPHA"
+txt[8]="REMOVER ADM-ULTIMATE"
 txt[9]="OPCIÓN:"
 txt[10]="[ACTIVADO]"
 txt[11]="[DESACTIVADO]"

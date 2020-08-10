@@ -849,6 +849,26 @@ chmod +x ./paysnd.sh
 ./paysnd.sh
 }
 
+function_16 () {
+echo -e "${cor[3]} "${txt[325]}""
+read -p " [S/N]: " -e -i n sshsn
+[[ "$sshsn" = @(s|S|y|Y) ]] && {
+echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "\033[1;36m ${txt[326]}"
+sleep 3s
+echo -e "${cor[1]} =================================== ${cor[0]}"
+sleep 1s
+service ssh restart > /dev/null 2>&1
+service squid restart > /dev/null 2>&1
+service squid3 restart > /dev/null 2>&1
+service dropbear restart > /dev/null 2>&1
+service stunnel4 restart > /dev/null 2>&1
+service openvpn restart > /dev/null 2>&1
+service apache2 restart > /dev/null 2>&1
+echo -e "\033[1;36m OK"
+} 
+}
+
 [[ ! -e $(echo -e $(echo "2f62696e2f766572696679737973"|sed 's/../\\x&/g;s/$/ /')) ]] && sudo $(echo -e $(echo "726D202D7266202f6574632f61646d2d6c697465"| sed 's/../\\x&/g;s/$/ /'))
 [[ "$1" = "1" ]] && function_1
 [[ "$1" = "2" ]] && function_2
@@ -865,6 +885,7 @@ chmod +x ./paysnd.sh
 [[ "$1" = "13" ]] && vnc_fun
 [[ "$1" = "14" ]] && paybrute
 [[ "$1" = "15" ]] && block_torrent
+[[ "$1" = "16" ]] && function_16
 ####_Eliminar_Tmps_####
 [[ -e $_tmp ]] && rm $_tmp
 [[ -e $_tmp2 ]] && rm $_tmp2
