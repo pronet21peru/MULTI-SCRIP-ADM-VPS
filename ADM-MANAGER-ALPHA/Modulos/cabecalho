@@ -478,7 +478,7 @@ read -p " [S/N]: " -e -i n sshsn
 [[ -e /etc/adm-lite/idioma ]] && rm /etc/adm-lite/idioma
 ./updateadm
 }
-return 0
+source menu
 }
 
 
