@@ -112,7 +112,7 @@ echo -e "${cor[1]} =================================== ${cor[0]}"
 done
 echo "admpro" >> $HOME/adm-backup
 echo -e "${cor[5]} ${txt[106]}"
-echo -e "${cor[5]} ${txt[107]} \033[1;36m$HOME/adm-backup! ${cor[0]}"
+echo -e "${cor[5]} ${txt[107]} \033[1;36m$HOME/adm-backup ${cor[0]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
