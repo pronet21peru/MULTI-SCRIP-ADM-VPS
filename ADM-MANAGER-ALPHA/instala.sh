@@ -51,9 +51,8 @@ echo -e "${cor[2]} $text Figlet"
 fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
-echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[1]}=================================== "
 }
-
 
 valid_fun () {
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
@@ -75,6 +74,7 @@ function_verify
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 [[ -e $HOME/lista ]] && rm $HOME/lista
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]}Procedimiento perfecto realizado con Éxito!"
 echo -e "${cor[1]}=================================== "
@@ -85,7 +85,6 @@ echo -e "${cor[2]}y accede al script, buen uso!"
 echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
-
 
 error_fun () {
 echo -e "${cor[5]}=================================== "
@@ -102,17 +101,20 @@ exit 1
 }
 
 rm $(pwd)/$0
-cor[1]="\033[1;36m"
-cor[2]="\033[1;33m"
-cor[3]="\033[1;31m"
-cor[5]="\033[1;32m"
-cor[4]="\033[0m"
+cor[0]="\033[0m"
+cor[1]="\033[0;34m"
+cor[2]="\033[1;31m"
+cor[3]="\033[1;37m"
+cor[4]="\033[1;36m"
+cor[5]="\033[1;33m"
+cor[6]="\033[1;35m"
 cd $HOME
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 apt-get install gawk -y > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}=================================== "
@@ -134,6 +136,7 @@ id="fr"
 id="es"
 ;;
 esac
+clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
