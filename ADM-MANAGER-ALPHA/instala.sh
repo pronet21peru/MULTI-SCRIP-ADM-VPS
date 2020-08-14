@@ -25,12 +25,12 @@ done
 echo -e "\033[1;33m]\033[1;31m -\033[1;32m 100%\033[1;37m"
 }
 
-function_verify () {
-  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
-}
-
 instalar_fun () {
 cd /etc/adm-lite && bash cabecalho --instalar
+}
+
+function_verify () {
+  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
 }
 
 elimined_fun () {
@@ -114,7 +114,7 @@ apt-get install gawk -y > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}=================================== "
 echo -ne " OPCION: "; read lang
 case $lang in
