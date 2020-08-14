@@ -140,8 +140,6 @@ case $lang in
 *)id="es"";;
 esac
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} Utilice el enlace de instalación oficial:\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n No utilice otros enlaces!"
-echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[3]} Inicio de la instalación..."
