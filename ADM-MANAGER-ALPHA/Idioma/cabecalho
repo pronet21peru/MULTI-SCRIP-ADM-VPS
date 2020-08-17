@@ -319,17 +319,24 @@ unset __vencidos
 }
 
 funcao_idioma () {
-idioma[1]="en English"
-idioma[2]="fr Franch"
-idioma[3]="de German"
-idioma[4]="it Italian"
-idioma[5]="pt Portuguese"
-idioma[6]="es Spanish"
+idioma[1]="ar Arabic"
+idioma[2]="zh Chinese"
+idioma[3]="en English"
+idioma[4]="fr Franch"
+idioma[5]="de German"
+idioma[6]="it Italian"
+idioma[7]="ja Japanese"
+idioma[8]="pl Polish"
+idioma[9]="pt Portuguese"
+idioma[10]="ru Russian"
+idioma[11]="es Spanish"
+idioma[12]="tr Turkish"
 i="1"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ===================================================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[77]} ${txt[78]}
- ${txt[79]}"
-echo -e "${cor[1]} =================================== ${cor[3]}"
+ ${txt[79]}
+ ${txt[80]}"
+echo -e "${cor[1]} ===================================================================== ${cor[3]}"
 while true; do
 [[ "${idioma[$i]}" = "" ]] && break
 a=$(echo ${idioma[$i]} | awk '{print $2}')
@@ -345,7 +352,7 @@ texto3=$(printf '%-20s' "[ $i ]-$a")
 i=$(($i+1))
 echo -e "$texto1 $texto2 $texto3"
 done
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ===================================================================== ${cor[0]}"
 echo -e " ${txt[82]}"
 read -p " => " idiom
 number_var $idiom > /dev/null 2>&1
@@ -357,8 +364,8 @@ else
  }
 fi
 [[ "$id" = "" ]] && {
- echo -e " Error!"
- sleep 1s
+ echo -e " Error, Language not Selected!"
+ sleep 2s
  source menu
  exit 0
  }
@@ -380,22 +387,27 @@ echo ""
 fi
 done
 echo ""
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ===================================================================== ${cor[0]}"
 echo -e "\033[0m"
 unset idioma
 exit 0
 }
 
 traduzir () {
+[[ "$1" = "pt" ]] && rm $_dr > /dev/null && touch $HOME/fim && exit
 apt-get install gawk -y > /dev/null 2>&1
 [[ -e $_tmp4 ]] && rm $_tmp4
-rm $_dr && rm $_idioma
-cd /etc/adm-lite
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/IDIOMA_VPS/$1/idioma
+cp $_dr $_tmp4 && rm $_dr
+touch $_dr
+while read _texto; do
+source trans -b pt:$1 "$_texto" >> "$_dr"
+done < $_tmp4
 unset txt
 touch $HOME/fim
 exit 0
 }
+
+touch $(add_values 2f 75 73 72 2f 62 69 6e 2f 61 64 6d 2d 75 6c 74 69 6d 61 74 65)
 
 #PREENXE_VARIAVEL $select_name
 select_users () {
