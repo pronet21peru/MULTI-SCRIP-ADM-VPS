@@ -321,19 +321,7 @@ Datei mit Authentifizierung erstellen (Benutzername und Passwort)?
 Datei generiert in:
 Um es online zu lassen:
 Automatische Ausführung
-AUTHENTIKATION VON PROXY SQUID
-Fehler beim Generieren des Passworts, Squid-Authentifizierung wurde nicht gestartet!
-AUTHENTIFIZIERUNG DES PROXY SQUID INITIATED.
-Proxy-Squid nicht installiert, kann nicht fortgesetzt werden.
-AUTHENTIFIZIERUNG DES PROXY SQUID DEAKTIVIERT.
-Der Benutzer darf nicht null sein.
-Möchten Sie die Squid-Proxy-Authentifizierung aktivieren?
-Möchten Sie die Squid-Proxy-Authentifizierung deaktivieren?
 IHRE IP:
 RESTART VPS (Neuboot)
 Möchtest du den VPS wirklich neu starten?
 Vorbereiten des Neustarts von VPS.
-INSTALLATIONSMENÜ
-INSTALAR
-CONFIGURAR
-Seleccione un opción
