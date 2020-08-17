@@ -320,20 +320,8 @@ Create a new OpenVPN file?
 Create file with authentication (username and password)?
 File generated in:
 To leave it online:
-Automatic Execution
-AUTHENTICATION OF PROXY SQUID
-Error generating password, squid authentication did not start!
-AUTHENTICATION OF THE PROXY SQUID INITIATED.
-Proxy squid not installed, can not continue.
-AUTHENTICATION OF THE PROXY SQUID DEACTIVATED.
-The user can not be null.
-Do you want to enable squid proxy authentication?
-Do you want to disable squid proxy authentication?
+AUTOMATIC EXECUTION
 YOUR IP:
 RESTART VPS (REBOOT)
 Do you really want to Restart the VPS?
 Preparing to restart VPS.
-INSTALLATION MENU
-INSTALAR
-CONFIGURAR
-Seleccione un opción

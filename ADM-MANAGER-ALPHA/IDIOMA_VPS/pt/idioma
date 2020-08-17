@@ -320,20 +320,8 @@ Crie um novo arquivo OpenVPN?
 Criar arquivo com autenticação (nome de usuário e senha)?
 Arquivo gerado em:
 Para deixar on-line:
-Execução Automática
-AUTENTICAÇÃO DO SQUID PROXY
-Erro ao gerar senha, a autenticação do squid não foi iniciada!
-AUTENTICAÇÃO DO LÍQUIDO DE PROXY INICIADO.
-Proxy squid não instalado, não pode continuar.
-AUTENTICAÇÃO DO LÍQUIDO DE PROXY DESACTIVADO.
-O usuário não pode ser nulo.
-Você quer habilitar a autenticação de proxy do squid?
-Deseja desativar a autenticação do proxy do squid?
+EXECUÇÃO AUTOMÁTICA
 Seu IP:
 REINICIAR VPS (REINICIALIZAR)
 Você realmente quer reiniciar o VPS?
 Preparando para reiniciar o VPS.
-MENU DE INSTALAÇÃO
-INSTALAR
-CONFIGURAR
-Seleccione un opción

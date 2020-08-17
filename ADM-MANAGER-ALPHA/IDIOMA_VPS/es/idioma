@@ -1,7 +1,7 @@
 ADM-MANAGER-ULTIMATE
-EN LÍNEA:
-EXPIRADOS:
-SU SISTEMA:
+USUARIOS ONLINE
+USUARIOS VENCIDOS
+SU SISTEMA
 ¡BIENVENIDO AL MENÚ!
 GESTIONAR USUARIOS
 HERRAMIENTAS
@@ -217,8 +217,8 @@ Añadir Host a Squid
 Quitar el host de Squid
 Opción Invalida
 Dominios actuales en el archivo
-Escriba el dominio que desea agregar
-Iniciando con un .
+Escriba el Host-Squid que desea agregar
+Iniciando con un ., ejemplo: .bughost.com
 ¡Esta vacío, no ha escrito nada!
 El dominio ya existe en el archivo
 ¡Éxito, Archivo Actualizado!
@@ -320,20 +320,8 @@ Crear un nuevo archivo OpenVPN?
 Crear archivo con autenticación (usuario y contraseña)?
 Archivo generado en:
 Para dejarlo en línea:
-Ejecución Automática
-AUTENTICACIÓN DE PROXY SQUID
-Error al generar contraseña, la autenticación de squid no se inició!
-AUTENTICACIÓN DEL PROXY SQUID INICIADO.
-Proxy squid no instalado, no puede continuar.
-AUTENTICACIÓN DEL PROXY SQUID DESACTIVADO.
-El usuario no puede ser nulo.
-¿Desea habilitar la autenticación de proxy squid?
-¿Desea desactivar la autenticación de proxy squid?
+EJECUCIÓN AUTOMATICÁ
 SU IP:
-REINICIAR VPS (REBOOT)
-¿Realmente desea Reiniciar la VPS?
-Preparando para reiniciando VPS.
-MENÚ INSTALACIÓN
-INSTALAR
-CONFIGURAR
-Seleccione un opción
+REINICIAR SRVICIOS (VPS)
+¿Realmente desea Reiniciar los Servicios?
+Preparando para reiniciar Servicios.
