@@ -74,6 +74,7 @@ function_verify
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 [[ -e $HOME/lista ]] && rm $HOME/lista
+echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
 clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}Procedimiento perfecto realizado con Éxito!"
