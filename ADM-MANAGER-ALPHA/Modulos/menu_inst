@@ -19,17 +19,6 @@ i=1
 echo -e "$portas"
 }
 
-#LEX-FUN
-add_values () {
-unset value
-for hex in $(echo "$@"); do
-value+="$hex"
-done
-echo -e $(echo "$value"| sed 's/../\\x&/g;s/$/ /') && return 0 || return 1
-}
-[[ ! -e $(add_values 2f 75 73 72 2f 62 69 6e 2f 61 64 6d 2d 75 6c 74 69 6d 61 74 65) ]] && exit 0
-
-
 #MEU IP
 fun_ip () {
 MEU_IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
