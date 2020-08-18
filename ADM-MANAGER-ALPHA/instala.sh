@@ -117,21 +117,12 @@ wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 
 mv -f ./trans /bin/ && chmod 777 /bin/*
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[5]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[5]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[3]-ES"
 echo -e "${cor[1]}=================================== "
 echo -ne " OPCION: "; read lang
 case $lang in
 1)
-id="pt"
-;;
-2)
-id="en"
-;;
-3)
 id="es"
-;;
-4)
-id="fr"
 ;;
 *)
 id="es"
