@@ -76,12 +76,12 @@ echo "$v1" > /etc/adm-lite/versao_script
 [[ -e $HOME/lista ]] && rm $HOME/lista
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]}Procedimiento perfecto realizado con Éxito!"
+echo -e "${cor[2]}Procedimiento perfecto realizado con Éxito!"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} |âˆ†| ${cor[2]}Ahora solo configura su VPS con el menú de instalación"
+echo -e "${cor[2]} |âˆ†| ${cor[2]}Ahora solo configura su VPS con el menú de instalación"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}Utilice los comandos: menú, adm"
-echo -e "${cor[2]}y accede al script, buen uso!"
+echo -e "${cor[5]}Utilice los comandos: menú, adm"
+echo -e "${cor[5]}y accede al script, buen uso!"
 echo -e "${cor[1]}=================================== "
 echo -ne " \033[0m"
 }
@@ -116,7 +116,7 @@ wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 
 mv -f ./trans /bin/ && chmod 777 /bin/*
 clear
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[5]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[5]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}=================================== "
 echo -ne " OPCION: "; read lang
 case $lang in
@@ -140,7 +140,7 @@ clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[3]} Inicio de la instalación..."
+echo -e "${cor[2]} Inicio de la instalación..."
 echo -e "${cor[1]}=================================== "
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
