@@ -1,5 +1,5 @@
 #!/bin/bash
-barra="\033[0;34m ===================================\033[1;37m"
+barra="\033[0;34m===================================\033[1;37m"
 
 fun_bar () {
 comando[0]="$1"
@@ -52,8 +52,9 @@ echo -e "${cor[2]} $text Figlet"
 fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
-echo -e "${cor[1]}=================================== "
+echo -e "$barra"
 }
+
 
 valid_fun () {
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
@@ -65,30 +66,30 @@ echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
-echo -e "${cor[3]} Ahora se instalarán las dependencias"
-echo -e "${cor[1]}=================================== "
+echo -e "${cor[3]} $(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
+echo -e "$barra"
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 function_verify
-[[ -e $HOME/lista ]] && rm $HOME/lista
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]}Procedimiento perfecto realizado con Éxito!"
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} |âˆ†| ${cor[2]}Ahora solo configura su VPS con el menú de instalación"
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]}Utilice los comandos: menú, adm"
-echo -e "${cor[5]}y accede al script, buen uso!"
-echo -e "${cor[1]}=================================== "
+echo -e "$barra"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
+echo -e "$barra"
+echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
+echo -e "$barra"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Use os Comandos"): menu, adm"
+echo -e "${cor[2]} $(source trans -b pt:${id} "e acesse o script, um bom uso!")"
+echo -e "$barra"
 echo -ne " \033[0m"
 }
 
+
 error_fun () {
-echo -e "${cor[5]}=================================== "
+echo -e "$barra"
 echo -e "\033[1;31mYour apt-get Error!"
 echo -e "Reboot the System!"
 echo -e "Use Command:"
@@ -96,32 +97,27 @@ echo -e "\033[1;36mdpkg --configure -a"
 echo -e "\033[1;31mVerify your Source.list"
 echo -e "For Update Source list use this comand"
 echo -e "\033[1;36mwget https://www.dropbox.com/s/sb82ddp9fjcg1ub/apt-source.sh && chmod 777 ./* && ./apt-*"
-echo -e "${cor[5]}=================================== "
+echo -e "$barra"
 echo -ne "\033[0m"
 exit 1
 }
 
 rm $(pwd)/$0
-cor[0]="\033[0m"
-cor[1]="\033[0;34m"
-cor[2]="\033[1;31m"
-cor[3]="\033[1;37m"
-cor[4]="\033[1;36m"
-cor[5]="\033[1;33m"
-cor[6]="\033[1;35m"
+cor[1]="\033[1;36m"
+cor[2]="\033[1;33m"
+cor[3]="\033[1;31m"
+cor[5]="\033[1;32m"
+cor[4]="\033[0m"
 cd $HOME
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 apt-get install gawk -y > /dev/null 2>&1
-locale-gen en_US.UTF-8 > /dev/null 2>&1
-update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
-apt-get install gawk -y > /dev/null 2>&1
-wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
+wget -O trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Modulos/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
-mv -f ./trans /bin/ && chmod 777 /bin/*
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
-echo -e "${cor[1]}=================================== "echo -ne " OPCION: "; read lang
+echo -e "$barra"
+echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}===================================\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "$barra"
+echo -ne " OPCION: "; read lang
 case $lang in
 1)
 id="pt"
@@ -139,11 +135,11 @@ id="fr"
 id="es"
 ;;
 esac
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
-echo -e "${cor[1]}=================================== "
-echo -e "${cor[2]} Inicio de la instalación..."
-echo -e "${cor[1]}=================================== "
+echo -e "$barra"
+echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
+echo -e "$barra"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
+echo -e "$barra"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
 valid_fun
