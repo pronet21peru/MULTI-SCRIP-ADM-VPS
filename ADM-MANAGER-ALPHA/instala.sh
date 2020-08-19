@@ -1,4 +1,5 @@
 #!/bin/bash
+barra="\033[0;34m ===================================\033[1;37m"
 
 fun_bar () {
 comando[0]="$1"
@@ -75,7 +76,6 @@ v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECT
 echo "$v1" > /etc/adm-lite/versao_script
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
-clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[2]}Procedimiento perfecto realizado con Éxito!"
 echo -e "${cor[1]}=================================== "
@@ -113,13 +113,15 @@ cd $HOME
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 apt-get install gawk -y > /dev/null 2>&1
+locale-gen en_US.UTF-8 > /dev/null 2>&1
+update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
+apt-get install gawk -y > /dev/null 2>&1
 wget -O trans https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0 -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
-clear
+mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}=================================== "
-echo -e "${cor[5]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[3]-ES"
-echo -e "${cor[1]}=================================== "
-echo -ne " OPCION: "; read lang
+echo -e "${cor[5]}SELECCIONAR IDIOMA\n${cor[1]}=================================== \n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[1]}=================================== "echo -ne " OPCION: "; read lang
 case $lang in
 1)
 id="pt"
