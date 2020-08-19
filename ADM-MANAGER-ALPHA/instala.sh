@@ -122,13 +122,21 @@ echo -e "${cor[1]}=================================== "
 echo -ne " OPCION: "; read lang
 case $lang in
 1)
+id="pt"
+;;
+2)
+id="en"
+;;
+3)
 id="es"
+;;
+4)
+id="fr"
 ;;
 *)
 id="es"
 ;;
 esac
-clear
 echo -e "${cor[1]}=================================== "
 echo -e "${cor[5]} INSTALADOR ADM-SCRIPTS Â®"
 echo -e "${cor[1]}=================================== "
