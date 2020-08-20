@@ -131,7 +131,7 @@ id="es"
 id="fr"
 ;;
 *)
-id="es"
+id="pt"
 ;;
 esac
 echo -e "$barra"
