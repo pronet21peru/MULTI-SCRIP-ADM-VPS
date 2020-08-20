@@ -284,7 +284,7 @@ fun_dropbear () {
  return 0
  }
 echo -e "$barra\n\033[1;32m $(fun_trans "INSTALADOR DROPBEAR ADM-ULTIMATE")\n$barra"
-echo -e " $(fun_trans "POR PADRAO, DROPBEAR USA A PORTA 443")\033[1;37m"
+echo -e " $(fun_trans "POR PADRÃO, DROPBEAR USA A PORTA 443")\033[1;37m"
 echo -e "$barra"
    [[ $(mportas|grep 443) != "" ]] && {
    echo -e "\033[1;31m $(fun_trans "PORTA 443 EM USO")\033[1;37m"
@@ -1009,7 +1009,7 @@ unset tcpbypass
 [[ -e /etc/adm-lite/gettun ]] && gettun="\033[1;32m$(fun_trans "Online")"
 [[ -e /etc/adm-lite/edbypass ]] && tcpbypass="\033[1;32m$(fun_trans "Online")"
 echo -e "$barra"
-echo -e "\033[1;31m $(fun_trans "MENU INSTALACAO")"
+echo -e "\033[1;31m $(fun_trans "MENU INSTALAÇÃO")"
 echo -e "$barra"
 echo -e "${cor[2]} |1| ${cor[3]}$(fun_trans "CONFIGURAR") SQUID $squid"
 echo -e "${cor[2]} |2| ${cor[3]}$(fun_trans "CONFIGURAR") DROPBEAR $dropbear"
