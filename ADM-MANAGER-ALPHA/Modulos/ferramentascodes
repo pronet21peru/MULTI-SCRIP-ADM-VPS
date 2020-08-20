@@ -432,8 +432,8 @@ starts_test=$(python ./speedtest.py)
 down_load=$(echo "$starts_test" | grep "Download" | awk '{print $2,$3}')
 up_load=$(echo "$starts_test" | grep "Upload" | awk '{print $2,$3}')
 echo -e "${cor[5]} ${txt[185]}: $ping"
-echo -e "${cor[5]} ${txt[186]}: $up_load"
 echo -e "${cor[5]} ${txt[187]}: $down_load"
+echo -e "${cor[5]} ${txt[186]}: $up_load"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
