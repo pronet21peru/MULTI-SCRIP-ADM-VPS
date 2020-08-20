@@ -55,7 +55,6 @@ service apache2 restart > /dev/null 2>&1
 echo -e "$barra"
 }
 
-
 valid_fun () {
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite

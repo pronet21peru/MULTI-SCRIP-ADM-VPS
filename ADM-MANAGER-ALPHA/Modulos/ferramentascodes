@@ -46,6 +46,10 @@ echo "data: $data" >> $dir_user/$1
 fi
 }
 
+fun_tst () {
+speedtest --share > speed
+}
+
 function_1 () {
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[99]}"
@@ -427,14 +431,22 @@ function_9 () {
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[184]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
-ping=$(ping -c1 google.com |awk '{print $8 $9}' |grep -v loss |cut -d = -f2 |sed ':a;N;s/\n//g;ta')
-starts_test=$(python ./speedtest.py)
-down_load=$(echo "$starts_test" | grep "Download" | awk '{print $2,$3}')
-up_load=$(echo "$starts_test" | grep "Upload" | awk '{print $2,$3}')
-echo -e "${cor[5]} ${txt[185]}: $ping"
-echo -e "${cor[5]} ${txt[187]}: $down_load"
-echo -e "${cor[5]} ${txt[186]}: $up_load"
+link_bin="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/HERRAMIENTAS/Testador-Velocidad/speedtest"
+[[ ! -e /bin/speedtest ]] && wget -O /bin/speedtest ${link_bin} > /dev/null 2>&1 && chmod +x /bin/speedtest
+apt-get install python3 -y > /dev/null 2>&1
+##apt-get install python-pip -y > /dev/null 2>&1
+##pip install speedtest-cli > /dev/null 2>&1
+fun_tst
+png=$(cat speed | sed -n '5 p' |awk -F : {'print $NF'})
+down=$(cat speed | sed -n '7 p' |awk -F :  {'print $NF'})
+upl=$(cat speed | sed -n '9 p' |awk -F :  {'print $NF'})
+lnk=$(cat speed | sed -n '10 p' |awk {'print $NF'})
+echo -e "${cor[5]} ${txt[185]}: \033[1;37m$png"
+echo -e "${cor[5]} ${txt[187]}: \033[1;37m$down"
+echo -e "${cor[5]} ${txt[186]}: \033[1;37m$upl"
+echo -e "${cor[5]} LINK: \033[1;36m$lnk"
 echo -e "${cor[1]} =================================== ${cor[0]}"
+rm -rf $HOME/speed
 }
 
 function_10 () {

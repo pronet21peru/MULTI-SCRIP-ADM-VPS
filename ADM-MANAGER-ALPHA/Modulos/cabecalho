@@ -461,7 +461,7 @@ txt_ofuscatw=$(echo $txtofus|rev)
 fun_atualizar () {
 cd /etc/adm-lite
 chmod 777 ./*
-echo -e "${cor[3]} "¿Realmente desea actualizar su ADM-Ultimate?""
+echo -e "${cor[3]} "¿Update ADM-Ultimate?""
 read -p " [S/N]: " -e -i n sshsn
 [[ "$sshsn" = @(s|S|y|Y) ]] && {
 [[ -e /etc/adm-lite/idioma ]] && rm /etc/adm-lite/idioma
