@@ -390,6 +390,7 @@ traduzir () {
 apt-get install gawk -y > /dev/null 2>&1
 [[ -e $_tmp4 ]] && rm $_tmp4
 rm $_dr && rm $_idioma
+rm /etc/texto-adm > /dev/null 2>&1
 cd /etc/adm-lite
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Idioma/$1/idioma
 unset txt
