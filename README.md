@@ -18,6 +18,19 @@
 
 ```
 
+```
+ • Edicion especial Mod by Gato:
+
+*  ADM-MANAGER-ALPHA
+```
+
+```
+ • Recontruidos (NO RECOMENDAOS):
+
+*  GOLDEN-ADM-MANAGER 
+*  ADM-MANAGER-DANKELTHAHER
+```
+
 -------------------------------------------------------------------------------
 
 ```
