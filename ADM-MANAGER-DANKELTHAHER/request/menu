@@ -117,7 +117,7 @@ tput cuu1 && tput dl1
 done
 if [[ $Key = @(s|S|y|Y) ]]; then
 msg -verm "$(fun_trans "Perfecto Iniciando Procedimiento"): "
-wget -O $HOME/newadmin3.0.sh https://raw.githubusercontent.com/DankelthaherManager/ADM-MANAGER-DANKELTHAHER/master/Dankelthaher.sh &> /dev/null
+wget -O $HOME/newadmin3.0.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-DANKELTHAHER/instala.sh &> /dev/null
 chmod +x $HOME/Dankelthaher.sh*
 local LINGUAGE=$(cat ${SCPidioma})
 $HOME/Dankelthaher.sh "${LINGUAGE}"
