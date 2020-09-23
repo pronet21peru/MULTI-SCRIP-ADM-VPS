@@ -7,4 +7,4 @@
 
 ## Installation
 
-apt-get update && apt-get upgrade -y: wget https://raw.githubusercontent.com/GoldenADMPRO/GOLDEN-ADM-MANAGER/master/goldenvps.sh; chmod 777 goldenvps.sh* && ./goldenvps.sh.sh*
+apt-get update && apt-get upgrade -y: wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GOLDEN-ADM-MANAGER/goldenvps.sh; chmod 777 goldenvps.sh* && ./goldenvps.sh.sh*
