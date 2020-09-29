@@ -25,7 +25,7 @@
 ```
 
 ```
- • Recontruidos (NO RECOMENDAOS):
+ • Recontruidos (NO RECOMENDADO):
 
 *  GOLDEN-ADM-MANAGER 
 *  ADM-MANAGER-DANKELTHAHER
