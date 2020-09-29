@@ -1,5 +1,7 @@
 # GOLDEN-ADM-MANAGER
 
+# (NO RECOMENDADO - SOLO USAR PARA TESTEOS )
+
 **Manager Script Repositorio**
 
 * Un sistema operativo basado en Linux. Recomendamos Ubuntu 14.04
