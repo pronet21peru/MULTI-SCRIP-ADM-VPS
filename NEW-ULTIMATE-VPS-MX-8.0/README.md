@@ -13,5 +13,5 @@
 
 sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 
-Creditos: https://github.com/rudi9999
-Creditos: https://github.com/casitadelterror
+* Creditos: https://github.com/rudi9999
+* Creditos: https://github.com/casitadelterror

@@ -13,5 +13,5 @@
 
 wget https://www.dropbox.com/s/s6ybopqsz3wq4fx/instalador && chmod +x instalador && ./instalador
 
-Creditos: https://github.com/casitadelterror
+* Creditos: https://github.com/casitadelterror
 
