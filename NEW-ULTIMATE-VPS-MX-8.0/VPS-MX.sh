@@ -8,7 +8,7 @@ SCPusr="${SCPdir}/ger-user"
 SCPfrm="/etc/ger-frm"
 SCPfrm3="/etc/adm-lite"
 SCPinst="/etc/ger-inst"
-kalix1="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Nhc2l0YWRlbHRlcnJvci9zY3JpcHRzL21hc3Rlci9SRVBPU0lUT1JZ"
+kalix1="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvUFJPWUVDVE9TX0RFU0NPTlRJTlVBRE9TL21hc3Rlci9ORVctVUxUSU1BVEUtVlBTLU1YLTguMC9Nb2R1bG9z"
 PUTO='base64 -d'
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 echo "nameserver 8.8.4.4" >> /etc/resolv.conf
@@ -224,7 +224,7 @@ echo 'echo -e "\033[91m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bash
 echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
 echo 'echo -e "\033[91m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'echo -e "	[ VPS - MX - SCRIPT \033[1;97m ? MOD By @Kalix1 ?\033[1;33m ] \e[0m"'>> .bashrc
+echo 'echo -e "	[ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ] \e[0m"'>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'ver="$(cat /etc/versin_script_new)" '>> .bashrc
@@ -323,8 +323,6 @@ chmod +x /bin/Desbloqueo.sh
 wget -O /bin/monitor.sh https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Monitor-Service/monitor.sh &> /dev/null
 chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Monitor-Service/estilos.css &> /dev/null
-msg -bar2
-echo -e "	\e[1;43mLA CASITA DEL TERROR > FINAL\e[0m"
 msg -bar2
 msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰 "

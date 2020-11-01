@@ -41,13 +41,13 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	sleep 2
 	mkdir -p "$INSTALL_DIR_PARENT"
 	cd "$INSTALL_DIR_PARENT"
-    wget wget https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/zzupdate-master/zzupdate.default.conf -O /usr/local/vpsmxup/vpsmxup.default.conf  &> /dev/null
+    wget https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/zzupdate-master/zzupdate.default.conf -O /usr/local/vpsmxup/vpsmxup.default.conf  &> /dev/null
 	#chmod +x /usr/local/vpsmxup/vpsmxup.default.conf 
 	rm -rf /usr/local/vpsmxup/vpsmxup.sh
-    wget https://raw.githubusercontent.com/casitadelterror/scripts/master/zzupdater/zzupdate.sh -O /usr/local/vpsmxup/vpsmxup.sh &> /dev/null
+    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Install/zzupdate.sh -O /usr/local/vpsmxup/vpsmxup.sh &> /dev/null
 	chmod +x /usr/local/vpsmxup/vpsmxup.sh
 	rm -rf /usr/bin/vpsmxup
-    wget https://raw.githubusercontent.com/casitadelterror/scripts/master/zzupdater/zzupdate.sh -O /usr/bin/vpsmxup &> /dev/null
+    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Install/zzupdate.sh -O /usr/bin/vpsmxup &> /dev/null
 	chmod +x /usr/bin/vpsmxup
 	echo -e  "\033[1;97m              Copiando Instalador Interno "
 	
@@ -77,8 +77,6 @@ msg -bar
 echo -e "	\e[1;41m!ATENCION!\e[0m"
 echo -e "\e[1;100m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITA\n ESTA TOTALMENTE PROIBIDO SU VENTA\n EN CASO QUE LO AIGAS COMPRADO -\n RECUERDA QUE TE ME TIERON TODITA LA VERGA EN EL CL ðŸ¤£  \e[0m"
 msg -bar 
-echo -e "	\e[44;1;37mBY LA CASITA DEL TERROR\e[0m"
-msg -bar
 	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
 	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
     msg -bar
