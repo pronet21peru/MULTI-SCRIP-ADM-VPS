@@ -21,7 +21,7 @@ apt-get update -y; apt-get upgrade -y; wget /instala_server; chmod +x instala_se
 
 ## Installation Script
 
-apt-get update -y; apt-get upgrade -y; wget IP-DE-TU-VPS/Plus; chmod 777 Plus; ./Plus
+apt-get update -y; apt-get upgrade -y; wget (IP DE TU VPS)/Plus; chmod 777 Plus; ./Plus
 
 -------------------------------------------------------------------------------
 
