@@ -11,7 +11,7 @@
 
 ## Installation
 
-sudo apt update -y; apt upgrade -y; wget https://www.dropbox.com/s/s6ybopqsz3wq4fx/instalador; chmod 777 instalador* && ./instalador*
+apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/s6ybopqsz3wq4fx/instalador; chmod 777 instalador* && ./instalador*
 
 * Creditos: https://github.com/casitadelterror
 
