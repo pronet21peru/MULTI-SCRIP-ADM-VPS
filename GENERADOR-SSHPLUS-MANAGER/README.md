@@ -1,7 +1,7 @@
 ﻿# GENERADOR-SSHPLUS-MANAGER
 # UPDATE 10/11/2020
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/blob/master/Imagenes/SSHPLUS_MANAGER.jpg)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/GENERADOR-SSHPLUS-MANAGER/Imagenes/GENERADOR-SSHPLUS-MANAGER.png)
 
 -------------------------------------------------------------------------------
 
