@@ -2,7 +2,7 @@
 
 # (NO RECOMENDADO - SOLO USAR PARA TESTEOS )
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/ADM-MANAGER-ALPHA/Imagenes/NEW-ULTIMATE-VPS-MX-8.0.png)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/NEW-ULTIMATE-VPS-MX-8.0/Imagenes/NEW-ULTIMATE-VPS-MX-8.0.png)
 
 -------------------------------------------------------------------------------
 
