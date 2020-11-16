@@ -23,7 +23,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 clear
  msg -bar2
- msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
+ msg -ama "     [ VPS - MX - SCRIPT \033[1;97m âŒ MOD By @Kalix1 âŒ\033[1;33m ]"
  echo -e  "\033[1;97m               EJECUTANDO ACTULIZADOR  \033[1;34m "
  msg -bar2
 ## Script name
@@ -73,6 +73,10 @@ otro_fun () {
     
 	echo "OK OTRO"
 }
+msg -bar
+echo -e "	\e[1;41m!ATENCION!\e[0m"
+echo -e "\e[1;100m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITA\n ESTA TOTALMENTE PROIBIDO SU VENTA\n EN CASO QUE LO AIGAS COMPRADO -\n RECUERDA QUE TE ME TIERON TODITA LA VERGA EN EL CL ðŸ¤£  \e[0m"
+msg -bar 
 	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
 	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
     msg -bar
