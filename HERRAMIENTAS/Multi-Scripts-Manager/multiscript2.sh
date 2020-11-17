@@ -70,7 +70,7 @@ newfreeinstaldev () {
     apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/qhftefty46hz51x/newfreeinstal?dl=0 && bash new*
 }
 atualizar () {
-    rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/HERRAMIENTAS/Multi-Scripts-Manager/multiscript2.sh; chmod +x multiscript2.sh
+    rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/HERRAMIENTAS/Multi-Scripts-Manager/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 }
 remove_multiscripts () {
     rm -rf $HOME/multiscript2.sh
@@ -92,7 +92,7 @@ echo -e "
 \033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
 \033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;31m(FREE) 
+\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mNEWADM BY DANKELTHAHER       \033[1;32m(FREE) 
