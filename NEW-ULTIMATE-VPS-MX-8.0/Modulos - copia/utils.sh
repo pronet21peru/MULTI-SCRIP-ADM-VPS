@@ -5,10 +5,23 @@ msg -bar
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
+spt="/etc/newadm"
 RAM () {
 sudo sync
 sudo sysctl -w vm.drop_caches=3 > /dev/null 2>&1
 msg -ama "   Ram limpiada con Exito!"
+}
+resellers(){
+msg -bar
+echo -e "	\e[1;42mCAMBIO DE CREDITOS|RESELLER\e[0m"
+msg -bar
+read -p "INGRESAR EL NUEVO RESELLER : " resell
+echo "$resell" > ${spt}/message.txt
+msg -bar
+echo "SU NUEVO RESELLER ES >[ $(cat ${spt}/message.txt) ]"
+msg -bar
+echo -e " \e[1;44mCREDITOS|RESELLER ACTUALIZADOS\e[0m"
+msg -bar
 }
 TCPspeed () {
 if [[ `grep -c "^#ADM" /etc/sysctl.conf` -eq 0 ]]; then
@@ -124,9 +137,10 @@ echo -ne "\033[1;32m [2] > " && msg -azu "CACHE PARA SQUID $squid"
 echo -ne "\033[1;32m [3] > " && msg -azu "REFRESCAR RAM"
 echo -ne "\033[1;32m [4] > " && msg -azu "LIMPIAR PAQUETES  OBSOLETOS"
 echo -ne "\033[1;32m [5] > " && msg -azu "$(fun_trans "RESET IPTABLES")"
+echo -ne "\033[1;32m [6] > " && msg -azu "AGREGAR NUEVO CREDITOS|RESELLER"
 echo -ne "\033[1;32m [0] > " && msg -bra "$(fun_trans "VOLVER")"
 msg -bar
-while [[ ${arquivoonlineadm} != @(0|[1-5]) ]]; do
+while [[ ${arquivoonlineadm} != @(0|[1-6]) ]]; do
 read -p "[0-5]: " arquivoonlineadm
 tput cuu1 && tput dl1
 done
@@ -136,6 +150,7 @@ case $arquivoonlineadm in
 3)RAM;;
 4)packobs;;
 5)resetiptables;;
+6)resellers;;
 0)exit;;
 esac
 msg -bar
