@@ -6,6 +6,13 @@
 
 **Multi-Scripts-Manager**
 
+## :heavy_exclamation_mark: Requerimientos
+
+* Un sistema operativo basado en Linux (Ubuntu o Debian) 
+* Recomendamos Ubuntu 16.04 Server x86_64
+* Tambien puede funcionar en algunas versiones de  Debian Server x86_64
+* Se recomienda usar una distro nueva o formatiada
+
 Comandos para executar: 
 
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/HERRAMIENTAS/Multi-Scripts-Manager/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
