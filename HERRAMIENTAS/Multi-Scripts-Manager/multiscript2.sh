@@ -28,6 +28,15 @@ fun_upgrade () {
 }
 
 ##PANIL A INSTALAR
+sshplus () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
+}
+newultimate () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/instalar.sh; chmod 777 instalar.sh* && ./instalar.sh*
+}
+admmanageralpha () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/instala.sh; chmod 777 instala.sh* && ./instala.sh*
+}
 scriptmx () {
     wget https://raw.githubusercontent.com/casitadelterror/scripts/master/instalador/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
 }
@@ -37,17 +46,8 @@ power () {
 dankel () {
     wget https://raw.githubusercontent.com/DankelthaherManager/ADM-MANAGER-DANKELTHAHER/master/instala.sh; chmod +x instala.sh* && ./instala.sh*
 }
-sshplus () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
-}
-panel_v12 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v12/install > /dev/null 2>&1; chmod +x install; ./install
-}
 panel_v15 () {
     wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v15/install > /dev/null 2>&1; chmod +x install; ./install
-}
-panel_v15_2 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v15_2/ocspanel > /dev/null 2>&1; chmod +x ocspanel; ./ocspanel
 }
 panel_v20 () {
     wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
@@ -55,11 +55,11 @@ panel_v20 () {
 panel_v20_mod () {
     wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20_mod/install > /dev/null 2>&1; chmod +x install; ./install
 }
-panel_v23 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v23/install > /dev/null 2>&1; chmod +x install; ./install
+atualizar () {
+    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/HERRAMIENTAS/Multi-Scripts-Manager/multiscript2.sh; chmod +x multiscript2.sh
 }
-panel_v25 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
+remove_multiscripts () {
+    rm -rf $HOME/multiscript2.sh exit
 }
 
 while true $x != "ok"
@@ -72,12 +72,12 @@ echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get update "; fun_pr
 echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get upgrade "; fun_prog 'fun_upgrade'
 echo -e "$barra"
 echo -e "
-\033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1            \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mNEWADM bY DANKELTHAHER     \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BYPOWEMX           \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER            \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mXXXXXXXXXXXXXXXXXXXXX      \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mXXXXXXXXXXXXXXXXXXXXX      \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31        \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4        \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ALPH           \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1            \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK By powermx         \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mNEWADM bY DANKELTHAHER     \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mXXXXXXXXXXXXXXXXXXXXX      \033[1;32m(FREE)
 \033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mXXXXXXXXXXXXXXXXXXXXX      \033[1;32m(FREE)
 \033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mXXXXXXXXXXXXXXXXXXXXX      \033[1;32m(FREE) 
@@ -94,32 +94,32 @@ echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read
 case "$x" in 
    1 | 01)
    clear
-   scriptmx
+   sshplus
    exit;
    ;;
    2 | 02)
    clear
-   dankel
+   newultimate
    exit;
    ;;
    3 | 03)
    clear
-   power
+   admmanageralpha
    exit;
    ;;
    4 | 04)
    clear
-   sshplus
+   scriptmx
    exit;
    ;;      
    5 | 05)
    clear
-   panel_v12
+   power
    exit;
    ;;
    6 | 06)
    clear
-   panel_v15
+   dankel
    exit;
    ;; 
    7 | 07)
@@ -149,12 +149,12 @@ case "$x" in
    ;;
    12)
    clear
-   clean_htmlfolder
+   atualizar
    exit;
    ;;
    13)
    clear
-   remove_panel
+   remove_multiscripts
    exit;
    ;;
    0 | 00)
