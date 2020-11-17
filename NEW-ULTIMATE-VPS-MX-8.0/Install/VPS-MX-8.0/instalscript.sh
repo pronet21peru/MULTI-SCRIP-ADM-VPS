@@ -1,6 +1,10 @@
 #!/bin/bash
 #sudo apt-get update  &>/dev/null
 #sudo apt-get wget -y &>/dev/null
+killall apt apt-get
+dpkg --configure -a
+apt-get install software-properties-common -y
+apt-add-repository universe -y
 rm -rf /etc/localtime &>/dev/null
 ln -s /usr/share/zoneinfo/America/Mexico_City /etc/localtime &>/dev/null
 rm $(pwd)/$0 &> /dev/null
@@ -52,51 +56,13 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	echo -e  "\033[1;97m              Copiando Instalador Interno "
 	
 	echo "           --------------------------------"	
-	
 	msg -bar2
 	sleep 2
 else
 	echo ""
 fi
-
-ubu16_fun () {
-    wget -O /etc/apt/sources.list https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Repositorios/16.04/sources.list &> /dev/null
-	echo -e "\033[1;97m SELECCIONO UBU 16"
-}
-
-ubu18_fun () {
-    wget -O /etc/apt/sources.list https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Repositorios/18.04/sources.list &> /dev/null
-	echo -e "\033[1;97m OK UBU 18"
-}	
-
-otro_fun () {
-    
-	echo "OK OTRO"
-}
-	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
-	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
-    msg -bar
-    echo -e "\033[1;97m Escoja la opcion deseada."
-    msg -bar
-    echo " 1).- Ubuntu 16.04 "
-    echo " 2).- Ubuntu 18.04 "
-    echo " 3).- Otro "
-	msg -bar
-	echo -n "Digite solo el numero segun su respuesta: "
-    read opcao
-    case $opcao in
-    1)
-    ubu16_fun 
-    ;;
-    2)
-    ubu18_fun
-    ;;
-    3)
-    otro_fun
-    ;;
-    esac
-	
-sleep 3
+sleep 5
 ## Restore working directory
 cd $WORKING_DIR_ORIGINAL
+clear
 vpsmxup

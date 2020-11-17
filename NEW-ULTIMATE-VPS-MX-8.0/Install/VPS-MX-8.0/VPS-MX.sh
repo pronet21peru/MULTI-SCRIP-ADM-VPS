@@ -32,20 +32,32 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 ### PAQUETES PRINCIPALES 
 msg -bar
-echo -e "\033[92m -- FINALIZANDO INSTALACION DE PAQUETES NECESARIOS -- "
+echo -e "\033[97m"
+echo -e "\033[41m -- INSTALACION DE PAQUETES NECESARIOS PARA VPS-MX -- "
+echo -e "\033[100m  PONER ATENCION A INSTALACION PARA SIGUIENTE PREGUNTA"
+echo -e "\033[97m"
 msg -bar
+#grep
 apt-get install grep -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "grep"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
 [[ $(dpkg --get-selections|grep -w "grep"|head -1) ]] && ESTATUS=`echo -e "\033[92mINSTALADO"` &>/dev/null
 echo -e "\033[97m    # apt-get install grep............ $ESTATUS "
+#net-tools
+apt-get install net-tools -y &>/dev/null
+[[ $(dpkg --get-selections|grep -w "net-tools"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
+[[ $(dpkg --get-selections|grep -w "net-tools"|head -1) ]] && ESTATUS=`echo -e "\033[92mINSTALADO"` &>/dev/null
+echo -e "\033[97m    # apt-get install net-tools....... $ESTATUS "
+#gawk
 apt-get install gawk -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "gawk"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
 [[ $(dpkg --get-selections|grep -w "gawk"|head -1) ]] && ESTATUS=`echo -e "\033[92mINSTALADO"` &>/dev/null
 echo -e "\033[97m    # apt-get install gawk............ $ESTATUS "
+#mlocate
 apt-get install mlocate -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "mlocate"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
 [[ $(dpkg --get-selections|grep -w "mlocate"|head -1) ]] && ESTATUS=`echo -e "\033[92mINSTALADO"` &>/dev/null
 echo -e "\033[97m    # apt-get install mlocate......... $ESTATUS "
+#lolcat gem
 apt-get install lolcat -y &>/dev/null
 sudo gem install lolcat &>/dev/null
 [[ $(dpkg --get-selections|grep -w "lolcat"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
@@ -130,27 +142,28 @@ echo -e "\033[97m    # apt-get install zip............. $ESTATUS "
 [[ $(dpkg --get-selections|grep -w "apache2"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
 [[ $(dpkg --get-selections|grep -w "apache2"|head -1) ]] && ESTATUS=`echo -e "\033[92mINSTALADO"` &>/dev/null
 echo -e "\033[97m    # apt-get install apache2......... $ESTATUS "
-sleep 3s
+msg -bar2
+echo -e "\033[1;39m Preciona Enter Para continuar"
 clear
 ### FIXEADOR PARA SISTEMAS 86_64
 idfix64_86 () {
 msg -bar2
 echo -e "ENCASO DE PEDIR ALGUNA INSTALACION ESCOJA: y "
-apt-get update; apt-get upgrade 
-apt-get install curl
-apt-get install lsof
-apt-get install sudo
-apt-get install figlet
-apt-get install cowsay
-apt-get install bc
-apt-get install python
+apt-get update; apt-get upgrade -y
+apt-get install curl -y
+apt-get install lsof -y
+apt-get install sudo -y
+apt-get install figlet -y
+apt-get install cowsay -y
+apt-get install bc -y
+apt-get install python -y
 apt-get install at 
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart
 clear
 msg -bar2
 echo -e "ESCOJER PRIMERO #All locales# Y LUEGO #en_US.UTF-8# " 
-clear
+sleep 7s
 export LANGUAGE=en_US.UTF-8\
   && export LANG=en_US.UTF-8\
   && export LC_ALL=en_US.UTF-8\
@@ -161,12 +174,12 @@ export LANGUAGE=en_US.UTF-8\
 clear
 }
 msg -bar2
-echo -e "\033[1;97m     ¿APLICAR PARCHES PARA CORREGIR ERRORES?" 
+echo -e "\033[1;97m  ¿PRECENTO ALGUN ERROR ALGUN PAQUETE ANTERIOR?" 
 msg -bar2
-echo -e "\033[1;32m 1- Escoja:(N) Para Instalacion Normal"
-echo -e "\033[1;31m 2- Escoja:(S) Si ya intento instalar el script y\n precento errores, aplique este parche."
+echo -e "\033[1;32m 1- Escoja:(N) No. Para Instalacion Normal"
+echo -e "\033[1;31m 2- Escoja:(S) Si. Saltaron errores."
 msg -bar2
-echo -e "\033[1;39m Al preciona N continuara la instalacion Normalmente"
+echo -e "\033[1;39m Al preciona enter continuara la instalacion Normal"
 msg -bar2
 read -p " [ S | N ]: " idfix64_86   
 [[ "$idfix64_86" = "s" || "$idfix64_86" = "S" ]] && idfix64_86

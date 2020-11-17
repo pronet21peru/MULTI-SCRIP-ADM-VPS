@@ -19,8 +19,10 @@ rm -rf instalscript.sh
 SCRIPT_NAME=vpsmxup
 
 ## Title and graphics
+msg -bar2
 echo "         VPS-MX - $(date)"
 msg -bar2
+sleep 5s
 
 ## Enviroment variables
 TIME_START="$(date +%s)"
@@ -183,24 +185,16 @@ if [ "$SYMFONY_UPGRADE" = "1" ]; then
 	fi
 fi
 
-
-
 printTitle "Limpieza de paquetes (eliminación automática de paquetes no utilizados)"
 apt-get autoremove -y
 
 printTitle "Versión actual"
 lsb_release -d
 
-printTitle "Tiempo que tomó Actulizacion"
+printTitle "Tiempo que tomó Actulizacion de Repositorios de UBUNTU"
 echo "$((($(date +%s)-$TIME_START)/60)) min."
 msg -bar2
-echo -e "\033[93m           -- ACTULIZACION CASI COMPLETA -- "
-echo -e "\033[97m  SU VPS SE REINICIARA PARA FINALIZAR ACTULIZACIONES"
-msg -bar2
-echo -e "\033[93m                PARA FINALIZAR SOLO"
-echo -e "\033[93m                 DIGITE LA PALABRA\033[97m"
-echo ""
-echo -e "\033[1;41m                     sudo VPS-MX                      \033[0;37m"
+echo -e "\033[93m         -- ACTULIZACION DE UBUNTU COMPLETA -- "
 wget https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/VPS-MX.sh -O /usr/bin/VPS-MX &> /dev/null
 chmod +x /usr/bin/VPS-MX
 if [ "$REBOOT" = "1" ]; then
@@ -214,6 +208,9 @@ if [ "$REBOOT" = "1" ]; then
 	reboot
 fi
 
-printTitle "Fin"
+printTitle "Se procede a Instalar VPS-MX"
 echo $(date)
 msg -bar2
+sleep 7s
+clear
+VPS-MX
