@@ -1,4 +1,11 @@
 #!/bin/bash
+#====================================================
+#	SCRIPT: MULTI SCRIPTS MANAGER
+#   DATA ATT:   17 de Dic 2020
+#	DESENVOLVIDO POR:	TEAM ILLUMINATI
+#	CONTATO TELEGRAM:	NO DISPONIBLE
+#	CANAL TELEGRAM:	https://t.me/admmanagerfree
+#====================================================
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
