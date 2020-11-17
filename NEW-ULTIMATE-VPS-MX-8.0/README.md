@@ -9,7 +9,7 @@
 **Manager Script Repositorio**
 
 * Un sistema operativo basado en Linux (Ubuntu o Debian) 
-* Recomendamos Ubuntu 16.04 Server x86_64
+* Recomendamos Ubuntu 16.04 Server x86_64 / 18.04 Server x86_64
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 
