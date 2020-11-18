@@ -44,8 +44,7 @@
 ```
 
 ```
-☆ https://t.me/admmanagerfree ☆
+ @AlexitoZR ©
 
-```
 
-**By: [  ⃘⃤꙰✰ ]**
+
